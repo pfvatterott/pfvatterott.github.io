@@ -1,0 +1,10 @@
+.image-thumbnail {
+    height: 250px;
+    width: 250px;
+    padding-bottom: 10px;
+}
+
+.jumbotron {
+    padding-top: 0;
+    padding-bottom: 5px;
+}

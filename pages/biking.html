@@ -1,20 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Paul Vatterott</title>
+    <title>Mountain Biking</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
   </head>
   <body>
-
     <div class="container">
+
+        <!-- Top Navbar -->
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navigation</a>
+            <a class="navbar-brand" href="../index.html">Home</a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,8 +33,8 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Interests</a>
                         <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="./pages/skiing.html">Skiing</a>
-                            <a class="dropdown-item" href="./pages/biking.html">Mountain Biking</a>
+                            <a class="dropdown-item" href="./skiing.html">Skiing</a>
+                            <a class="dropdown-item" href="./biking.html">Mountain Biking</a>
                         </div>
                     </li>
 
@@ -46,22 +47,45 @@
                 </ul>
             </div>
         </nav>
-        <div class="jumbotron">
-            <h1 class="display-3">Paul Vatterott</h1>
-            <p class="lead">Web Developer in Training</p>
-            <img class="image-thumbnail" src="./assets/profilepic.jpg" alt="Profile Pic">
-            <hr class="my-2">
-            <p class="lead"></p>
-            <ul>
-                <li><a href="mailto: pfvatterott@gmail.com">pfvatterott@gmail.com</a></li>
-                <li><a href="https://github.com/pfvatterott">Github</a></li>
-                <li><a href="https://www.instagram.com/pppaaaauuuullllll/">Instagram</a></li>
-            </ul>
-        </div>
-    
+
+        <!--Title-->
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+              <h1 class="display-4">Mountain Biking</h1>
+              <p class="lead">During the summer you can usually find me out biking the beautiful trails in Utah.</p>
+            </div>
+
+            <!--Carousel-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="../assets/redmountain1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/altabiking1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../assets/cornerbiking1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+          </div>
 
     </div>
-
+      
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
