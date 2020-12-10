@@ -16,8 +16,6 @@
 }
 
 .bio {
-    /* margin-left: 300px; */
-    /* padding-bottom: 200px; */
     line-height: 200%;
 }
 
@@ -27,4 +25,12 @@
 
 .display-3 {
     padding-top: 10px;
+}
+
+
+/* Sizing of pictures for portolio cards */
+.portfoliocards {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
 }
