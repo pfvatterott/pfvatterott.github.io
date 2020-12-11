@@ -23,6 +23,10 @@ To view this website open up the index.html doc using your favorite web browser.
 
 ![screen shot](assets/screenshot.png)
 
+## Contributing
+
+Please feel free to offer any recommendations and to contribute yourself by forking the repository. 
+
 ## License
 
 MIT License
