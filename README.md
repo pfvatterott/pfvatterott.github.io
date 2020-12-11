@@ -1,10 +1,12 @@
+![Logo of the project](https://avatars3.githubusercontent.com/u/71739337?s=460&u=d51913eb5d616d3268d40003d5a527698a798037&v=4)
+
 # Personal Portfolio Website    
 
 ## Description
 
 For this project I used Bootstrap 4 to completely overhaul my personal portfolio. I learned many things in the process: the grid system, different Bootstrap components, how to have several pages for one website, and how to make a website responsive. 
 
-Here are a list of features included in this project:
+## Features
 
 1. A navbar that is unchanged on every page.
 2. Links to my email, github, and Instagram.
