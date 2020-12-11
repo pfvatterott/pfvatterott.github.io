@@ -1,4 +1,4 @@
-![Logo of the project](https://avatars3.githubusercontent.com/u/71739337?s=460&u=d51913eb5d616d3268d40003d5a527698a798037&v=4)
+![Logo of the project](assets/MyPost.png)
 
 # Personal Portfolio Website    
 
