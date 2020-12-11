@@ -1,29 +1,31 @@
+/* Font */
+
 * {
     font-family: 'Roboto', sans-serif;
 }
 
-.image-thumbnail {
-    height: 250px;
-    width: 250px;
-    padding-bottom: 10px;
-    float: left;
-    
-}
+/* Jumbotron Tweaks */
 
 .jumbotron {
     padding-top: 0;
     padding-bottom: 5px;
 }
 
+/* Index Paul Vatterott */
+
+.display-3 {
+    padding-top: 10px;
+}
+
+/* Bio Formatting */
+
 .bio {
     line-height: 200%;
 }
 
-.my-2 {
-    padding-top: 10px;
-}
+/* Extra Padding to Button in Contacts*/
 
-.display-3 {
+.my-2 {
     padding-top: 10px;
 }
 
@@ -35,6 +37,7 @@
     object-fit: cover;
 }
 
+/* Footer */
 .sticky {
     position: fixed;
     position: fixed;
