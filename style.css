@@ -1,7 +1,40 @@
-/* Font */
+/* Titles and Paragraphs */
 
-* {
-    font-family: 'Roboto', sans-serif;
+.jumbotron {
+    background-color: #EEE2DC;
+    font-family: 'Poppins', sans-serif;
+}
+
+.display-3 {
+    color: #123C69;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.lead {
+    color: #AC3B61;
+    font-weight: 400;
+}
+
+.display-4 {
+    color: #123C69;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+h3 {
+    color: #123C69;
+}
+
+.bio {
+    line-height: 200%;
+}
+
+/* Top Navbar */
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
 }
 
 /* Jumbotron Tweaks */
@@ -11,18 +44,6 @@
     padding-bottom: 5px;
 }
 
-/* Index Paul Vatterott */
-
-.display-3 {
-    padding-top: 10px;
-}
-
-/* Bio Formatting */
-
-.bio {
-    line-height: 200%;
-}
-
 /* Extra Padding to Button in Contacts*/
 
 .my-2 {
@@ -30,11 +51,15 @@
 }
 
 
-/* Sizing of pictures for portolio cards */
+/* Portfolio Cards */
 .portfoliocards {
     width: 100%;
     height: 30vh;
     object-fit: cover;
+}
+
+.card-color {
+    background-color: #BAB2B5;
 }
 
 /* Footer */
