@@ -1,4 +1,4 @@
-![Logo of the project](assets/MyPost.png)
+![Logo of the project](assets/images/MyPost.png)
 
 # Personal Portfolio Website    
 
@@ -14,6 +14,7 @@ For this project I used Bootstrap 4 to completely overhaul my personal portfolio
 4. A contact form (although it is not working).
 5. Two different interest pages with functioning caruousels.
 6. A portfolio page with five cards on it for each future project.
+7. Customized color scheme and fonts.
 
 ## Installation
 
@@ -21,7 +22,7 @@ To view this website open up the index.html doc using your favorite web browser.
 
 ## Usage
 
-![screen shot](assets/screenshot.png)
+![screen shot](assets/images/screenshot.png)
 
 ## Contributing
 
