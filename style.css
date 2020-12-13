@@ -1,70 +1,68 @@
 /* Top Navbar */
-
 .navbar {
-    font-family: 'Poppins', sans-serif;
-    font-size: large;
+  font-family: "Poppins", sans-serif;
+  font-size: large;
+  background-color: #bab2b5;
 }
 
-/* Titles */
-
+/* Titles and Paragraphs */
 .jumbotron {
-    background-color: #EEE2DC;
-    font-family: 'Poppins', sans-serif;
-    padding-top: 0;
-    padding-bottom: 5px;
+  background-color: #eee2dc;
+  font-family: "Poppins", sans-serif;
+  padding-top: 0;
+  padding-bottom: 5px;
+  padding-top: 0;
+  padding-bottom: 5px;
 }
 
 .display-3 {
-    color: #123C69;
-    font-weight: 400;
-    padding-top: 10px;
+  color: #123c69;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.lead {
+  color: #ac3b61;
+  font-weight: 400;
 }
 
 .display-4 {
-    color: #123C69;
-    font-weight: 400;
-    padding-top: 10px;
-}
-
-/* Paragraphs and Sections */
-
-.lead {
-    color: #AC3B61;
-    font-weight: 400;
+  color: #123c69;
+  font-weight: 400;
+  padding-top: 10px;
 }
 
 h3 {
-    color: #123C69;
+  color: #123c69;
 }
 
 .bio {
-    line-height: 200%;
+  line-height: 200%;
 }
 
 /* Extra Padding to Button in Contacts*/
-
 .my-2 {
-    padding-top: 10px;
+  padding-top: 10px;
 }
-
 
 /* Portfolio Cards */
 .portfoliocards {
-    width: 100%;
-    height: 30vh;
-    object-fit: cover;
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
 }
 
 .card-color {
-    background-color: #BAB2B5;
+  background-color: #ac3b61;
 }
 
 /* Footer */
 .sticky {
-    position: fixed;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+  position: fixed;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
 }
+
