@@ -2,7 +2,7 @@
 .navbar {
   font-family: "Poppins", sans-serif;
   font-size: large;
-  background-color: #bab2b5;
+  background-color: lightgray;
 }
 
 /* Titles and Paragraphs */
@@ -54,6 +54,8 @@ h3 {
 
 .card-color {
   background-color: #ac3b61;
+  color: #eee2dc;
+  font-size: larger;
 }
 
 /* Footer */
