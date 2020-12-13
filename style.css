@@ -1,8 +1,17 @@
-/* Titles and Paragraphs */
+/* Top Navbar */
+
+.navbar {
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+}
+
+/* Titles */
 
 .jumbotron {
     background-color: #EEE2DC;
     font-family: 'Poppins', sans-serif;
+    padding-top: 0;
+    padding-bottom: 5px;
 }
 
 .display-3 {
@@ -11,15 +20,17 @@
     padding-top: 10px;
 }
 
-.lead {
-    color: #AC3B61;
-    font-weight: 400;
-}
-
 .display-4 {
     color: #123C69;
     font-weight: 400;
     padding-top: 10px;
+}
+
+/* Paragraphs and Sections */
+
+.lead {
+    color: #AC3B61;
+    font-weight: 400;
 }
 
 h3 {
@@ -28,20 +39,6 @@ h3 {
 
 .bio {
     line-height: 200%;
-}
-
-/* Top Navbar */
-
-.navbar {
-    font-family: 'Poppins', sans-serif;
-    font-size: large;
-}
-
-/* Jumbotron Tweaks */
-
-.jumbotron {
-    padding-top: 0;
-    padding-bottom: 5px;
 }
 
 /* Extra Padding to Button in Contacts*/
