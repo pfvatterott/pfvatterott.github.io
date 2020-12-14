@@ -1,4 +1,4 @@
-![Logo of the project](assets/images/MyPost.png)
+![Logo of the project](assets/Images/MyPost.png)
 
 # Personal Portfolio Website    
 
@@ -22,7 +22,7 @@ To view this website open up the index.html doc using your favorite web browser.
 
 ## Usage
 
-![screen shot](assets/images/screenshot.png)
+![screen shot](assets/Images/screenshot.png)
 
 ## Contributing
 
