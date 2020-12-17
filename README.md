@@ -6,7 +6,7 @@
 
 For this project I used Bootstrap 4 to completely overhaul my personal portfolio. I learned many things in the process: the grid system, different Bootstrap components, how to have several pages for one website, and how to make a website responsive. 
 
-## Features
+This website features:
 
 1. A navbar that is unchanged on every page.
 2. Links to my email, github, and Instagram.
@@ -20,9 +20,25 @@ For this project I used Bootstrap 4 to completely overhaul my personal portfolio
 
 To view this website open up the index.html doc using your favorite web browser.
 
-## Usage
+## Screenshot of Main Page
 
 ![screen shot](assets/Images/screenshot.png)
+
+## Screenshot of Contact Page
+
+![screen shot](assets/Images/contactscreenshot.png)
+
+## Screenshot of Biking Page
+
+![screen shot](assets/Images/bikingscreenshot.png)
+
+## Screenshot of Skiing Page
+
+![screen shot](assets/Images/skiingscreenshot.png)
+
+## Screenshot of Portfolio Page
+
+![screen shot](assets/Images/portfolioscreenshot.png)
 
 ## Contributing
 
