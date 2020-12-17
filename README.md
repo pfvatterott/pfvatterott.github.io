@@ -20,6 +20,8 @@ This website features:
 
 To view this website open up the index.html doc using your favorite web browser.
 
+[Click here to access the homepage](https://pfvatterott.github.io/)
+
 ## Screenshot of Main Page
 
 ![screen shot](assets/Images/screenshot.png)
