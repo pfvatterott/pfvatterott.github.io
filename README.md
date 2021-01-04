@@ -15,6 +15,7 @@ This website features:
 5. Two different interest pages with functioning caruousels.
 6. A portfolio page with five cards on it for each future project.
 7. Customized color scheme and fonts.
+8. A blog! New as of 1/4/21.
 
 ## Installation
 
