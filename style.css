@@ -1,0 +1,27 @@
+/* Nav Bar */
+
+.nav-wrapper {
+    background-color: #F1A584;
+}
+
+/* Main */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+flex: 1 0 auto;
+}
+
+.main-profile-pic {
+    height: 300px;
+}
+
+.languages {
+    font-size: 20px;
+}
+
+/* .resume {
+    padding-right: 10px;
+} */

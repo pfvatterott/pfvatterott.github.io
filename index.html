@@ -2,127 +2,222 @@
 <html lang="en">
 
 <head>
-    <title>Paul Vatterott Homepage</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Paul Vatterott</title>
+  <!-- Material Icon CDN -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Materialize CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
 
-    <!-- Font -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <!-- CSS Files -->
-    <link rel="stylesheet" href="./assets/CSS/reset.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./assets/CSS/style.css" />
 </head>
 
 <body>
-    <div class="container">
-
-        <!-- Top Navbar-->
-        <header class="navbar navbar-expand-sm navbar-light">
-            <a class="navbar-brand" href="./index.html">Home</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
-                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <nav class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Contact</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="https://github.com/pfvatterott" target="_blank">Github</a>
-                            <a class="dropdown-item" href="https://www.instagram.com/pppaaaauuuullllll/"
-                                target="_blank">Instagram</a>
-                            <a class="dropdown-item" href="./contact.html">Send Me a Message</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId2" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">Interests</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="./skiing.html">Skiing</a>
-                            <a class="dropdown-item" href="./biking.html">Mountain Biking</a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="./blog.html">Blog</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-
-        <!--Title Bio Contacts-->
-        <main class="jumbotron">
-            <figure class="row">
-                <div class="col-sm-12">
-                    <img src="assets/Images/background.jpg" class="img-fluid" alt="Me on top of Mt. Superior in Utah" />
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#" class="brand-logo">
+            <img src="./assets/logo.png" alt="Paul Vatterott Logo">
+          </a>
+          <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Languages">Languages and Skills</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-menu">
+            <li>
+              <div class="userView">
+                <div class="background">
+                  <!-- <img src="http://lorempixel.com/output/abstract-q-c-640-480-10.jpg" alt="Background Sidenav"> -->
                 </div>
-            </figure>
-            <h1 class="display-3">Paul Vatterott</h1>
-            <p class="lead pl-1">Web Developer in Training</p>
-            <hr class="my-4" />
-            <div class="row">
-                <section class="col-sm-5">
-                    <h3>About Me</h3>
-                    <p class="bio">
-                        Based out of Salt Lake City, Utah and employed at the Rustler
-                        Lodge in Alta. Currently in the University of Utah's Fullstack Web
-                        Development Bootcamp.
-                    </p>
-                </section>
-                <div class="col-sm-2">
-
-                </div>
-                <aside class="col-sm-5">
-                    <h3>Contacts</h3>
-                    <ul>
-                        <li><a href="mailto:pfvatterott@gmail.com" target="_blank">pfvatterott@gmail.com</a></li>
-                        <li><a href="https://github.com/pfvatterott" target="_blank">Github</a></li>
-                        <li><a href="https://www.instagram.com/pppaaaauuuullllll/" target="_blank">Instagram</a></li>
-                    </ul>
-                </aside>
+                <a href="#!user"><img class="circle"
+                    src="https://ca.slack-edge.com/T01EK8F49FD-U01EQLMH3S6-10ba5fdbd101-512"
+                    alt="User Image Sidenav"></a>
+                <a href="#!name"><span class="black-text name">Paul Vatterott</span></a>
+                <a href="#!email"><span class="black-text email">pfvatterott@gmail.com</span></a>
+              </div>
+            </li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Languages">Languages and Skills</a></li>
+            <li><a href="#Portfolio">Portfolio</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Main -->
+  <main>
+    <div class="parallax-container">
+      <div class="parallax"><img src="./assets/main-background.png"></div>
+    </div>
+    <div class="section white">
+      <div class="row container">
+        <div class="col s12 m6 center-align">
+          <img class="circle main-profile-pic z-depth-3 hoverable" id="Contact" src="./assets/profile-picture.jpg">
+        </div>
+        <!-- <div class="col m2 l1"></div> -->
+        <div class="col s12 m6">
+          <h2 class="header">Paul Vatterott</h2>
+          <h4 class="grey-text text-darken-3 lighten-3">Full-Stack Web Developer</h4>
+          <p class="grey-text text-darken-3 lighten-3">Based out of Salt Lake City, Utah and employed at the Rustler
+            Lodge in Alta. Currently in the University of Utah's Fullstack Web Development Bootcamp.</p>
+          <span style="font-size: 3em">
+            <a href="https://github.com/pfvatterott" target="_blank" style="color: #F1A584" <i
+              class="fab fa-github tooltipped hoverable" data-tooltip="Github">
+            </a>
+            <a style="color: black;"> | </a>
+            <a href="https://www.linkedin.com/in/paul-vatterott-659a1643/" target="_blank" style="color: #F1A584" <i
+              class="fab fa-linkedin-in tooltipped hoverable" data-tooltip="LinkedIn">
+            </a>
+            <a style="color: black;"> | </a>
+            <a href="https://www.instagram.com/pppaaaauuuullllll/" target="_blank" style="color: #F1A584" <i
+              class="fab fa-instagram tooltipped hoverable" data-tooltip="Instagram">
+            </a>
+            <a style="color: black;"> | </a>
+            <a href="https://www.facebook.com/paul.vatterott/" target="_blank" style="color: #F1A584" <i
+              class="fab fa-facebook tooltipped hoverable" data-tooltip="Facebook">
+            </a>
+            <a style="color: black;"> | </a>
+            <a href="https://github.com/pfvatterott" target="_blank" style="color: #F1A584" <i
+              class="far fa-envelope tooltipped hoverable" data-tooltip="Email">
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="parallax-container">
+      <div class="parallax"><img src="./assets/background-2.jpg"></div>
+    </div>
+    <div class="section white" id="Languages">
+      <!-- <div class="row container">
+        <div class="col s12 m4">
+          <h2 class="header grey-text text-darken-3 lighten-3">Languages and Tools</h2>
+        </div>
+      </div> -->
+      <div class="row container">
+        <div class="col s12 m6">
+          <h2 class="header grey-text text-darken-3 lighten-3">Languages and Skills</h2>
+          <span style="font-size: 5em; color: #00BCD4;">
+            <i class="fab fa-html5 tooltipped hoverable" data-tooltip="HTML5"></i>
+            <i class="fab fa-css3 tooltipped hoverable" data-tooltip="CSS"></i>
+            <i class="fab fa-js-square tooltipped hoverable" data-tooltip="Javascript"></i>
+            <i class="fab fa-node-js tooltipped hoverable" data-tooltip="Node-js"></i>
+          </span>
+          <div class="row container">
+            <div class="col s12 m6">
+              <a href="./assets/resume.pdf" download>
+                Click to download PDF
+              </a>
             </div>
-        </main>
+          </div>
+        </div>
+        <div class="col s12 m6">
+          <img class="materialboxed z-depth-3 hoverable" height="550px" src="assets/resume-screenshot.png">
+        </div>
+      </div>
+    </div>
+    <!-- Parallax -->
+    <div class="parallax-container">
+      <div class="parallax"><img src="./assets/background-3.jpg"></div>
+    </div>
+    <!-- Cards -->
+    <br>
+    <h2 class="header grey-text text-darken-3 lighten-3 center-align" id="Portfolio">Projects</h2>
+    <div class="section white">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card medium hoverable z-depth-3">
+            <div class="card-image">
+              <img src="assets/best-snow.png" height="170px">
+            </div>
+            <div class="card-content">
+              <a class="btn-floating halfway-fab waves-effect waves-light red z-depth-5" href="https://github.com/pfvatterott/Project1" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+              <span class="card-title">Best Snow</span>
+              <p>A feature rich website that displays snowpack across the Western US. With a team of three I focused on using Bing Maps, API calls, and data analysis.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://pfvatterott.github.io/Project1/" target="_blank">Visit Best Snow</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card medium hoverable z-depth-3">
+            <div class="card-image">
+              <img src="assets/weather.jpg" height="170px">
+            </div>
+            <div class="card-content">
+              <a class="btn-floating halfway-fab waves-effect waves-light red z-depth-5" href="https://github.com/pfvatterott/Weather-Dashboard" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+              <span class="card-title">Weather Dashboard</span>
+              <p>An interactive website that displays the current weather and five day forecast for any location the user searches for.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://pfvatterott.github.io/Weather-Dashboard/" target="_blank">Visit Weather Dashboard</a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="card medium hoverable z-depth-3">
+            <div class="card-image">
+              <img src="assets/workday.jpg" height="170px">
+            </div>
+            <div class="card-content">
+              <a class="btn-floating halfway-fab waves-effect waves-light red z-depth-5" href="https://github.com/pfvatterott/Work-Day-Scheduler" target="_blank"><i class="fab fa-github" aria-hidden="true"></i></a>
+              <span class="card-title">Work Day Scheduler</span>
+              <p>A local storage based scheduler to organize your workday.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://pfvatterott.github.io/Work-Day-Scheduler/" target="_blank">Visit Weather Dashboard</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <br>
-    <br>
-    <br>
 
-    <!--Footer -->
-    <footer class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="card sticky">
-                    <div class="card-body">
-                        <p class="card-text">Copyright &copy; 2020 Paul Vatterott</p>
-                    </div>
-                </div>
-            </div>
+
+  </main>
+  <!-- Footer -->
+  <footer class="page-footer cyan">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Paul Vatterott</h5>
+          <p class="grey-text text-lighten-4">pfvatterott@gmail.com</p>
+          <p class="grey-text text-lighten-4">651-308-4855</p>
         </div>
-    </footer>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2021 Copyright Paul Vatterott
+      </div>
+    </div>
+  </footer>
+  
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- Materialize JS CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="./index.js"></script>
+  <script>
+    $("document").ready(function () {
+      $(".button-collapse").sideNav();
+      $('.parallax').parallax();
+      $('.scrollspy').scrollSpy();
+      $('.materialboxed').materialbox();
+    });
+  </script>
 </body>
 
 </html>
