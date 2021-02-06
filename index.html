@@ -27,7 +27,7 @@
         <div class="nav-wrapper">
           <div class="container">
             <a href="#" class="brand-logo">
-              <img src="./assets/logo.png" alt="Paul Vatterott Logo">
+              <img src="./assets/logo.png" alt="Paul Vatterott Logo" id="logo">
             </a>
             <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
@@ -213,10 +213,21 @@
   <script src="./index.js"></script>
   <script>
     $("document").ready(function () {
+      // materialize initializers
       $(".button-collapse").sideNav();
       $('.parallax').parallax();
       $('.scrollspy').scrollSpy();
       $('.materialboxed').materialbox();
+
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 450) {
+          $("#logo").hide();
+        };
+        if ($(this).scrollTop() < 449) {
+          $("#logo").show();
+        }
+      })
+
     });
     
   </script>
