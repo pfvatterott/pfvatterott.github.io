@@ -214,11 +214,14 @@
   <script>
     $("document").ready(function () {
       // materialize initializers
-      $(".button-collapse").sideNav();
+      $(".button-collapse").sideNav({
+        closeOnClick: true
+      });
       $('.parallax').parallax();
       $('.scrollspy').scrollSpy();
       $('.materialboxed').materialbox();
 
+      // logo fads in and out depending on scroll location
       $(window).scroll(function() {
         if ($(this).scrollTop() > 450) {
           $("#logo").fadeOut(1000);
