@@ -1,7 +1,7 @@
 /* Nav Bar */
 
 .nav-wrapper {
-    background-color: #F1A584;
+    background-color: #2E3639;
 }
 
 /* Main */
@@ -18,10 +18,30 @@ flex: 1 0 auto;
     height: 300px;
 }
 
+.contact-icons {
+    background-color: #00bcd4;
+}
+
+.contact-icons:hover {
+    background-color: #2E3639;
+}
+
+.language-icons {
+    background-color: #00bcd4;
+}
+
+.language-icons:hover {
+    background-color: #2E3639;
+}
+
 .languages {
     font-size: 20px;
 }
 
-/* .resume {
-    padding-right: 10px;
-} */
+.card-github {
+    background-color:#00bcd4;
+}
+
+.page-footer {
+    background-color: #2E3639;
+}
