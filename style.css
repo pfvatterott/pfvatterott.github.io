@@ -55,3 +55,8 @@ flex: 1 0 auto;
 .download-button:hover {
     background-color: black;
 }
+
+/* removes overlay so user can press links */
+.navbar-fixed {
+    z-index: 999; 
+ }
