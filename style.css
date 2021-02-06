@@ -45,3 +45,12 @@ flex: 1 0 auto;
 .page-footer {
     background-color: #2E3639;
 }
+
+.download-button {
+    background-color: #2E3639;
+    margin-top: 15px;
+}
+
+.download-button:hover {
+    background-color: black;
+}
