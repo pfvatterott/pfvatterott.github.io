@@ -221,10 +221,10 @@
 
       $(window).scroll(function() {
         if ($(this).scrollTop() > 450) {
-          $("#logo").hide();
+          $("#logo").fadeOut(1000);
         };
         if ($(this).scrollTop() < 449) {
-          $("#logo").show();
+          $("#logo").fadeIn(1000);
         }
       })
 
