@@ -28,6 +28,7 @@ flex: 1 0 auto;
 
 .language-icons {
     background-color: #00bcd4;
+    margin-right: 15px;
 }
 
 .language-icons:hover {
