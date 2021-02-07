@@ -51,6 +51,7 @@ flex: 1 0 auto;
     background-color: #2E3639;
     margin-top: 15px;
     min-width: 200px;
+    margin-left: 70px;
 }
 
 .download-button:hover {
