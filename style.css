@@ -47,11 +47,21 @@ flex: 1 0 auto;
     background-color: #2E3639;
 }
 
+.resume {
+    margin-top: 25px;
+}
+
 .download-button {
-    background-color: #2E3639;
-    margin-top: 15px;
+    background-color: #494D52;
+    margin-top: 30px;
     min-width: 200px;
     margin-left: 70px;
+    border-radius: 10px;
+}
+
+.card {
+    margin-top: 15px;
+    margin-bottom: 25px;
 }
 
 .download-button:hover {
