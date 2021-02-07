@@ -1,8 +1,12 @@
 /* Nav Bar */
-
 .nav-wrapper {
     background-color: #2E3639;
 }
+
+.navbar-fixed { /* removes overlay so user can press links */
+    z-index: 999; 
+ }
+
 
 /* Main */
 body {
@@ -14,6 +18,7 @@ main {
 flex: 1 0 auto;
 }
 
+/* Contact Section */
 .main-profile-pic {
     height: 300px;
 }
@@ -26,24 +31,13 @@ flex: 1 0 auto;
     background-color: #2E3639;
 }
 
+/* Languages/Skills Section */
 .language-icons {
     background-color: #00bcd4;
     margin-right: 7px;
 }
 
 .language-icons:hover {
-    background-color: #2E3639;
-}
-
-.languages {
-    font-size: 20px;
-}
-
-.card-github {
-    background-color: #2E3639;
-}
-
-.page-footer {
     background-color: #2E3639;
 }
 
@@ -59,16 +53,21 @@ flex: 1 0 auto;
     border-radius: 10px;
 }
 
+.download-button:hover {
+    background-color: #2E3639
+}
+
+/* Cards/Portfolio Section */
 .card {
     margin-top: 15px;
     margin-bottom: 25px;
 }
 
-.download-button:hover {
-    background-color: black;
+.card-github {
+    background-color: #2E3639;
 }
 
-/* removes overlay so user can press links */
-.navbar-fixed {
-    z-index: 999; 
- }
+/* Footer */
+.page-footer {
+    background-color: #2E3639;
+}
