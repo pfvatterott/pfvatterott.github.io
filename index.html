@@ -17,6 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous" />
+  <!-- Icons8 -->
+  <link href="https://icons8.com/icon/55215/jquery"/>
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -94,7 +96,7 @@
               class="hoverable btn-floating btn-large contact-icons z-depth-4">
               <i class="fab fa-facebook tooltipped" data-tooltip="Facebook"></i>
             </a>
-            <a href="https://github.com/pfvatterott" target="_blank" style="color:#00bcd4"
+            <a href="mailto:pfvatterott@gmail.com" target="_blank" style="color:#00bcd4"
               class="hoverable btn-floating btn-large contact-icons z-depth-4">
               <i class="far fa-envelope tooltipped" data-tooltip="Email"></i>
             </a>
@@ -111,6 +113,12 @@
       <div class="row container">
         <div class="col s12 m6">
           <h2 class="header grey-text text-darken-3 lighten-3">Languages and Skills</h2>
+          <p class="grey-text text-darken-3 lighten-3">Since starting the University of Utah Web Development Program I have gone all in to hone my skills to be ready for the job market. My natural curiosity paired with a strong work ethic means I am always looking to improve my skills.
+          <br><br>
+          Through past experiences leading countless outdoors expeditions I have acquired the ability to work with and manage teams of varying sizes. I naturally like to take the reins to solve problems while also feeling content to step back and learn from others.
+          <br><br>
+          Once I earn my certificate from the University of Utah I will be joining the job search as a full-stack web developer. Until then, please reach out if you'd like to talk or collaborate!
+          </p>
           <span style="font-size: 5em; color:#00bcd4;">
             <a class="hoverable btn-floating btn-large language-icons z-depth-4">
               <i class="fab fa-html5 tooltipped" data-tooltip="HTML5"></i>
@@ -244,10 +252,10 @@
 
       // logo fads in and out depending on scroll location
       $(window).scroll(function () {
-        if ($(this).scrollTop() > 450) {
+        if ($(this).scrollTop() > 350) {
           $("#logo").fadeOut(1000);
         };
-        if ($(this).scrollTop() < 449) {
+        if ($(this).scrollTop() < 349) {
           $("#logo").fadeIn(1000);
         }
       })
