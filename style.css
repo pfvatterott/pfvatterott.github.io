@@ -15,8 +15,8 @@ body {
     flex-direction: column;
 }
 main {
-flex: 1 0 auto;
-overflow: hidden;
+    flex: 1 0 auto;
+    overflow: hidden; /* Fixes bug from AOS that creates empty space on right side of mobile screen */
 }
 
 /* Contact Section */
