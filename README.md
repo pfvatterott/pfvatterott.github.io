@@ -18,6 +18,7 @@ Some fun features of this website:
 * Cards presenting my various projects
 * Hover effects
 * Tooltips for all buttons
+* Scrolling animations for most buttons, text, and images
 
 
 ## Built With
@@ -25,6 +26,7 @@ Some fun features of this website:
 * [JQuery](https://jquery.com/)
 * [Font Awesome](https://fontawesome.com/)
 * [Favicon](https://favicon.io/)
+* [Animate on Scroll](https://michalsnik.github.io/aos/)
 
 
 ## Link to Site
