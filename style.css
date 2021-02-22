@@ -35,7 +35,7 @@ main {
 /* Languages/Skills Section */
 .language-icons {
     background-color: #00bcd4;
-    margin-right: 7px;
+    /* margin-right: 7px; */
 }
 
 .language-icons:hover {
@@ -73,3 +73,4 @@ main {
 .page-footer {
     background-color: #2E3639;
 }
+
