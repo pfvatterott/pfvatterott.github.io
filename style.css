@@ -70,7 +70,27 @@ main {
     background-color: #2E3639;
 }
 
+.best-snow-border {
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #0BBCD9, #0B6FD9);
+}
+
+.best-snow {
+    border-radius: 25px;
+}
+
+.bestsnow-icons {
+    background-color: #18BAF0;
+}
+
+.line1 {
+    border-left: 6px solid #2E3639;
+    height: 500px;
+    border-radius: 1px;
+}
+
 /* Footer */
 .page-footer {
     background-color: #2E3639;
 }
+
