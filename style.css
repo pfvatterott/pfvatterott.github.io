@@ -61,14 +61,6 @@ main {
 }
 
 /* Cards/Portfolio Section */
-.card {
-    margin-top: 15px;
-    margin-bottom: 25px;
-}
-
-.card-github {
-    background-color: #2E3639;
-}
 
 .best-snow-border {
     border-radius: 25px;
@@ -79,14 +71,27 @@ main {
     border-radius: 25px;
 }
 
-.bestsnow-icons {
-    background-color: #18BAF0;
-}
-
 .line1 {
+    position: relative;
+    top: 30px;
     border-left: 6px solid #2E3639;
     height: 500px;
     border-radius: 1px;
+}
+
+.github-button {
+    background-color: #00bcd4;
+    border-radius: 10px;
+}
+
+.note-border {
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #60C4D6, #65E08C);
+}
+
+.team-border {
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #4F7AE3, #53EDE0);
 }
 
 /* Footer */
