@@ -62,20 +62,41 @@ main {
 
 /* Cards/Portfolio Section */
 
+.best-snow-container {
+    position: relative;
+    right: 40px;
+}
+
+.note-taker-container {
+    position: relative;
+    right: -40px;
+}
+
+.team-generator-container {
+    position: relative;
+    right: 40px;
+}
+
 .best-snow-border {
     border-radius: 25px;
     background-image: linear-gradient(to right, #0BBCD9, #0B6FD9);
+    width: 100%;
+    min-width: 340px;
 }
 
 .best-snow {
     border-radius: 25px;
+    min-height: 425px;
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
 }
 
 .line1 {
     position: relative;
-    top: 30px;
+    top: 60px;
     border-left: 6px solid #2E3639;
-    height: 500px;
+    height: 400px;
     border-radius: 1px;
 }
 
@@ -87,11 +108,15 @@ main {
 .note-border {
     border-radius: 25px;
     background-image: linear-gradient(to right, #60C4D6, #65E08C);
+    width: 100%;
+    min-width: 340px;
 }
 
 .team-border {
     border-radius: 25px;
     background-image: linear-gradient(to right, #4F7AE3, #53EDE0);
+    width: 100%;
+    min-width: 340px;
 }
 
 /* Footer */
