@@ -84,12 +84,21 @@ main {
     min-width: 340px;
 }
 
-.best-snow {
+.best-snow-border-small {
     border-radius: 25px;
+    background-image: linear-gradient(to right, #0BBCD9, #0B6FD9);
+}
+
+.best-snow {
+    border-radius: 10px;
     min-height: 425px;
     height: 100%;
     width: 100%;
     min-width: 300px;
+}
+
+.best-snow-small {
+    border-radius: 10px;
 }
 
 .line1 {
@@ -97,6 +106,12 @@ main {
     top: 60px;
     border-left: 6px solid #2E3639;
     height: 400px;
+    border-radius: 1px;
+}
+
+.line1-mobile {
+    border-bottom: 6px solid #2E3639;
+    height: 50px;
     border-radius: 1px;
 }
 
@@ -112,11 +127,21 @@ main {
     min-width: 340px;
 }
 
+.note-border-small {
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #60C4D6, #65E08C);
+}
+
 .team-border {
     border-radius: 25px;
     background-image: linear-gradient(to right, #4F7AE3, #53EDE0);
     width: 100%;
     min-width: 340px;
+}
+
+.team-border-small {
+    border-radius: 25px;
+    background-image: linear-gradient(to right, #4F7AE3, #53EDE0);
 }
 
 /* Footer */
