@@ -79,14 +79,14 @@ main {
 
 .best-snow-border {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #0BBCD9, #0B6FD9);
+    background-image: linear-gradient(to right, #002E57, #188BF0);
     width: 100%;
     min-width: 340px;
 }
 
 .best-snow-border-small {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #0BBCD9, #0B6FD9);
+    background-image: linear-gradient(to right, #002E57, #188BF0);
 }
 
 .best-snow {
@@ -122,26 +122,26 @@ main {
 
 .note-border {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #60C4D6, #65E08C);
+    background-image: linear-gradient(to right, #007A62, #19FFD1);
     width: 100%;
     min-width: 340px;
 }
 
 .note-border-small {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #60C4D6, #65E08C);
+    background-image: linear-gradient(to right, #007A62, #19FFD1);
 }
 
 .team-border {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #4F7AE3, #53EDE0);
+    background-image: linear-gradient(to right, #007A8A, #19E4FF);
     width: 100%;
     min-width: 340px;
 }
 
 .team-border-small {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #4F7AE3, #53EDE0);
+    background-image: linear-gradient(to right, #007A8A, #19E4FF);
 }
 
 /* Footer */
