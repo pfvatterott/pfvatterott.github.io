@@ -118,14 +118,14 @@ main {
 
 .note-border {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #007A62, #19FFD1);
+    background-image: linear-gradient(to right, #027D9C, #02BAE8);
     width: 100%;
     min-width: 380px;
 }
 
 .note-border-small {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #007A62, #19FFD1);
+    background-image: linear-gradient(to right, #027D9C, #02BAE8);
 }
 
 .team-border {
