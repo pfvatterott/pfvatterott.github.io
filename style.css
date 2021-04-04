@@ -116,6 +116,10 @@ main {
     border-radius: 10px;
 }
 
+.github-button:hover {
+    background-color: #2E3639
+}
+
 .note-border {
     border-radius: 25px;
     background-image: linear-gradient(to right, #027D9C, #02BAE8);
