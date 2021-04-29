@@ -134,14 +134,14 @@ main {
 
 .team-border {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #007A8A, #19E4FF);
+    background-image: linear-gradient(to right, #C45A60, #C49598);
     width: 100%;
     min-width: 380px;
 }
 
 .team-border-small {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #007A8A, #19E4FF);
+    background-image: linear-gradient(to right, #C45A60, #C49598);
 }
 
 /* Footer */
