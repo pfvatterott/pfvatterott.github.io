@@ -132,16 +132,16 @@ main {
     background-image: linear-gradient(to right, #027D9C, #02BAE8);
 }
 
-.team-border {
+.swapify-border {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #C45A60, #C49598);
+    background-image: linear-gradient(to right, #8EF0C9, #416E5C);
     width: 100%;
     min-width: 380px;
 }
 
-.team-border-small {
+.swapify-border-small {
     border-radius: 25px;
-    background-image: linear-gradient(to right, #C45A60, #C49598);
+    background-image: linear-gradient(to right, #8EF0C9, #416E5C);
 }
 
 /* Footer */
