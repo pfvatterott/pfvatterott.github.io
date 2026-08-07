@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* ==========================================
-   1. Interactive Topographic Particle Canvas
+   1. Interactive Particle Canvas
    ========================================== */
 function initCanvasBackground() {
   const canvas = document.getElementById('bg-canvas');
@@ -47,7 +47,6 @@ function initCanvasBackground() {
       this.vy = (Math.random() - 0.5) * 0.4;
       this.radius = Math.random() * 1.5 + 1;
       this.baseAlpha = Math.random() * 0.3 + 0.1;
-      this.color = '#00f2fe';
     }
 
     update() {
@@ -57,7 +56,6 @@ function initCanvasBackground() {
       if (this.x < 0 || this.x > width) this.vx *= -1;
       if (this.y < 0 || this.y > height) this.vy *= -1;
 
-      // Mouse proximity interaction
       const dx = mouse.x - this.x;
       const dy = mouse.y - this.y;
       const dist = Math.sqrt(dx * dx + dy * dy);
@@ -71,7 +69,7 @@ function initCanvasBackground() {
     draw() {
       ctx.beginPath();
       ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(0, 242, 254, ${this.baseAlpha})`;
+      ctx.fillStyle = `rgba(245, 78, 0, ${this.baseAlpha})`;
       ctx.fill();
     }
   }
@@ -89,7 +87,6 @@ function initCanvasBackground() {
   function animate() {
     ctx.clearRect(0, 0, width, height);
 
-    // Draw connecting mesh lines
     for (let i = 0; i < particles.length; i++) {
       particles[i].update();
       particles[i].draw();
@@ -103,7 +100,7 @@ function initCanvasBackground() {
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(0, 242, 254, ${0.12 * (1 - dist / 130)})`;
+          ctx.strokeStyle = `rgba(245, 78, 0, ${0.12 * (1 - dist / 130)})`;
           ctx.lineWidth = 0.6;
           ctx.stroke();
         }
@@ -116,7 +113,7 @@ function initCanvasBackground() {
 }
 
 /* ==========================================
-   2. Navbar Glass Effect & Active Link Observer
+   2. Navbar Scroll Observer
    ========================================== */
 function initNavbarScroll() {
   const navbar = document.querySelector('.navbar');
@@ -213,7 +210,7 @@ function initSkillsFilter() {
         const cardCat = card.getAttribute('data-category');
         if (category === 'all' || cardCat === category) {
           card.style.display = 'flex';
-          card.style.animation = 'fadeIn 0.4s ease forwards';
+          card.style.animation = 'fadeIn 0.3s ease forwards';
         } else {
           card.style.display = 'none';
         }
@@ -222,8 +219,10 @@ function initSkillsFilter() {
   });
 }
 
+
+
 /* ==========================================
-   6. Modals (Resume Modal)
+   7. Modals (Resume Modal)
    ========================================== */
 function initModals() {
   const modalBackdrops = document.querySelectorAll('.modal-backdrop');
@@ -245,7 +244,6 @@ function initModals() {
     });
   });
 
-  // Resume Modal Triggers
   const openResumeBtns = document.querySelectorAll('.open-resume-modal');
   const resumeModal = document.getElementById('resume-modal');
 
@@ -259,7 +257,7 @@ function initModals() {
 }
 
 /* ==========================================
-   7. Copy to Clipboard Utility with Toast
+   8. Copy to Clipboard Utility with Toast
    ========================================== */
 function initCopyButtons() {
   const copyBtns = document.querySelectorAll('.copy-btn');
@@ -300,7 +298,7 @@ function showToast(message) {
 }
 
 /* ==========================================
-   8. Contact Form Handling
+   9. Contact Form Handling
    ========================================== */
 function initContactForm() {
   const form = document.getElementById('contact-form');
@@ -327,7 +325,7 @@ function initContactForm() {
 }
 
 /* ==========================================
-   9. Smooth Scroll Back to Top
+   10. Smooth Scroll Back to Top
    ========================================== */
 function initSmoothScroll() {
   const backToTopBtn = document.querySelector('.back-to-top');

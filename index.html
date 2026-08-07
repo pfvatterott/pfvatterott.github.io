@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>Paul Vatterott — Customer Engineer & Full-Stack Developer</title>
-  <meta name="description" content="Portfolio of Paul Vatterott — Customer Engineer & Full-Stack Developer based out of Salt Lake City, UT. Specializing in Web Development, SaaS Systems, and Technical Solutions.">
+  <title>Paul Vatterott — Forward Deployed & Solutions Engineer</title>
+  <meta name="description" content="Personal site of Paul Vatterott — Forward Deployed Engineer, Solutions Engineer & Customer Engineer based in Salt Lake City, UT. Specializing in multi-language SDKs (React, Node, Python, Rust, Go), AI agent MCP servers, enterprise technical deployments, and developer solutions.">
   <meta name="author" content="Paul Vatterott">
 
   <!-- Open Graph / Social Meta Tags -->
-  <meta property="og:title" content="Paul Vatterott — Customer Engineer & Full-Stack Developer">
-  <meta property="og:description" content="Building scalable web applications, SaaS tools, and technical solutions in Salt Lake City, UT.">
+  <meta property="og:title" content="Paul Vatterott — Forward Deployed & Solutions Engineer">
+  <meta property="og:description" content="Forward Deployed Engineer, Solutions Engineer & Customer Engineer. Managing multi-language SDKs (React, Node, Python, Rust, Go), AI agent MCP tools, and enterprise client integrations in Salt Lake City, UT.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://paul-vatterott.com/">
   <meta property="og:image" content="./assets/profile-picture.jpg">
@@ -20,7 +20,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Font Awesome 6 Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
@@ -51,27 +51,27 @@
     <div class="scroll-progress-bar"></div>
   </div>
 
-  <!-- Background Particle Topography Canvas -->
+  <!-- Background Canvas -->
   <canvas id="bg-canvas"></canvas>
 
   <!-- Navbar -->
   <header class="navbar">
     <div class="container nav-container">
       <a href="#" class="nav-logo">
-        <img src="./assets/logo.png" alt="Paul Vatterott Logo">
-        <span>Paul Vatterott</span>
+        <img src="./assets/logo.png" alt="Logo">
+        <span>pvatterott.dev</span>
       </a>
 
       <ul class="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#experience" class="nav-link">Experience</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#about" class="nav-link"><span class="nav-num">[01]</span> About</a></li>
+        <li><a href="#skills" class="nav-link"><span class="nav-num">[02]</span> Skills</a></li>
+        <li><a href="#experience" class="nav-link"><span class="nav-num">[03]</span> Experience</a></li>
+        <li><a href="#contact" class="nav-link"><span class="nav-num">[04]</span> Contact</a></li>
       </ul>
 
       <div class="nav-actions">
         <button class="btn btn-outline btn-sm open-resume-modal">
-          <i class="fas fa-file-pdf"></i> Resume
+          <i class="fas fa-file-pdf"></i> Resume.pdf
         </button>
         <a href="#contact" class="btn btn-primary btn-sm">
           Get In Touch
@@ -79,7 +79,7 @@
       </div>
 
       <button class="mobile-toggle" aria-label="Toggle Menu">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-terminal"></i>
       </button>
     </div>
   </header>
@@ -90,14 +90,14 @@
       <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
         <div class="nav-logo">
           <img src="./assets/logo.png" alt="Logo">
-          <span>Paul Vatterott</span>
+          <span>pvatterott.dev</span>
         </div>
       </div>
       <ul class="mobile-nav-links">
-        <li><a href="#about" class="mobile-nav-link"><i class="fas fa-user-astronaut"></i> About</a></li>
-        <li><a href="#skills" class="mobile-nav-link"><i class="fas fa-code"></i> Skills</a></li>
-        <li><a href="#experience" class="mobile-nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
-        <li><a href="#contact" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="#about" class="mobile-nav-link"><i class="fas fa-terminal"></i> [01] About</a></li>
+        <li><a href="#skills" class="mobile-nav-link"><i class="fas fa-code"></i> [02] Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link"><i class="fas fa-code-branch"></i> [03] Experience</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><i class="fas fa-paper-plane"></i> [04] Contact</a></li>
       </ul>
     </div>
 
@@ -114,43 +114,38 @@
     <section class="hero-section" id="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <div class="hero-badge">
-            <span class="pulse-dot"></span>
-            <span>Support Engineer at PropelAuth • Salt Lake City, UT</span>
-          </div>
-
           <h1 class="hero-title">
-            Empowering Developers & Building <span class="gradient-text">Authentication Tooling</span>
+            Forward Deployed & <span class="gradient-text">Solutions Engineering</span>
           </h1>
 
           <p class="hero-subtitle">
-            Based in <strong style="color: var(--text-main);">Salt Lake City, UT</strong>. Support Engineer at <strong>PropelAuth</strong> managing multi-language SDKs (React, Node, Python, Rust, Go), authoring MCP servers for AI agents, and writing developer docs.
+            Based in <strong style="color: var(--text-main);">Salt Lake City, UT</strong>. Support Engineer at <strong>PropelAuth</strong> with proven experience at <strong>BetterCloud</strong> & <strong>ClickUp</strong>. Specializing in bridging complex technical codebases with enterprise client execution, multi-language SDKs (React, Node, Python, Rust, Go), and AI agent MCP tools.
           </p>
 
           <div class="hero-cta">
             <a href="#experience" class="btn btn-primary">
-              <i class="fas fa-briefcase"></i> View Experience
+              <i class="fas fa-code-branch"></i> View Experience
             </a>
             <button class="btn btn-outline open-resume-modal">
-              <i class="fas fa-eye"></i> View Resume
+              <i class="fas fa-file-pdf"></i> Resume.pdf
             </button>
-            <a href="#contact" class="btn btn-outline">
+            <a href="#contact" class="btn btn-secondary">
               <i class="fas fa-paper-plane"></i> Contact Me
             </a>
           </div>
 
           <div class="hero-metrics">
-            <div class="metric-item">
-              <span class="metric-num gradient-text">PropelAuth</span>
-              <span class="metric-label">Support Engineer</span>
+            <div class="metric-card">
+              <div class="metric-num gradient-text">Solutions Eng</div>
+              <div class="metric-label">FORWARD DEPLOYED & CE</div>
             </div>
-            <div class="metric-item">
-              <span class="metric-num">Multi-SDK</span>
-              <span class="metric-label">JS, Python, Rust, Go</span>
+            <div class="metric-card">
+              <div class="metric-num">Multi-SDK</div>
+              <div class="metric-label">JS, PYTHON, RUST, GO</div>
             </div>
-            <div class="metric-item">
-              <span class="metric-num gradient-text-alt">AI & MCP</span>
-              <span class="metric-label">Agent Tooling & Docs</span>
+            <div class="metric-card">
+              <div class="metric-num gradient-text-blue">Enterprise</div>
+              <div class="metric-label">PROPELAUTH • BETTERCLOUD</div>
             </div>
           </div>
         </div>
@@ -161,10 +156,9 @@
               <img src="./assets/profile-picture.jpg" alt="Paul Vatterott" class="profile-img">
             </div>
             <div class="floating-badge">
-              <i class="fas fa-mountain"></i>
+              <i class="fas fa-terminal"></i>
               <div class="floating-badge-text">
-                <span class="floating-badge-title">Salt Lake City, UT</span>
-                <span class="floating-badge-sub">Full Stack & Solutions</span>
+                <span class="floating-badge-title">SLC, UT • Solutions & FDE</span>
               </div>
             </div>
           </div>
@@ -176,44 +170,44 @@
     <section class="about-section" id="about">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
-          <h2 class="section-title">Expedition Leadership <span class="gradient-text">Meets Code</span></h2>
-          <p class="section-subtitle">A unique blend of high-stakes team management, technical problem-solving, and web application architecture.</p>
+          <span class="section-tag">[01] CAREER_FOCUS: FDE // SE // CE</span>
+          <h2 class="section-title">Technical Depth Meets <span class="gradient-text">Client Execution</span></h2>
+          <p class="section-subtitle">A proven hybrid engineer bridging deep codebase navigation, customer architecture, and product deployment.</p>
         </div>
 
         <div class="about-grid">
-          <div class="about-card glass-card">
+          <div class="about-card tactile-card">
             <p class="about-paragraph">
-              I'm a Support Engineer at <strong>PropelAuth</strong> currently based out of Salt Lake City, Utah. I support and guide developers with integrating PropelAuth into their applications via email, Slack, and video calls. My work spans managing multi-language client libraries (React, JavaScript, Node, Express, Python, Rust, and Go), writing comprehensive technical documentation, and building Model Context Protocol (MCP) servers to assist developer AI agents.
+              I am a <strong>Forward Deployed Engineer, Solutions Engineer, and Customer Engineer</strong> based out of Salt Lake City, Utah. With a track record spanning <strong>PropelAuth</strong>, <strong>BetterCloud</strong>, and <strong>ClickUp</strong>, I thrive at the intersection of complex codebases, enterprise architecture, and customer engineering—where I can dive directly into client code, build custom SDK integrations, and ensure seamless technical deployment.
             </p>
-            <div class="highlight-box">
-              <p><i class="fas fa-quote-left" style="color: var(--primary); margin-right: 0.5rem;"></i> "Leading mountain expeditions taught me adaptability, clear communication under pressure, and relentless problem-solving—skills that directly empower developers integrating complex authentication & software systems."</p>
-            </div>
             <p class="about-paragraph">
-              With a background spanning <strong>PropelAuth</strong>, <strong>BetterCloud</strong>, and <strong>ClickUp</strong>, I bridge deep technical SDK engineering with user guidance, developer experience, and product documentation.
+              My current engineering work at PropelAuth involves guiding developers through authentication architectures across email, Slack, and live video calls, managing client libraries in <strong>React, JavaScript, Node, Express, Python, Rust, and Go</strong>, writing technical documentation, and authoring <strong>Model Context Protocol (MCP) servers</strong> to assist AI agents.
+            </p>
+            <p class="about-paragraph">
+              Whether acting as a Forward Deployed Engineer embedded with client teams, a Solutions Engineer designing API architectures, or a Customer Engineer solving mission-critical production blockers, I deliver speed, clarity, and technical excellence.
             </p>
           </div>
 
           <div class="pillars-grid">
             <div class="pillar-card">
-              <div class="pillar-icon"><i class="fas fa-shield-halved"></i></div>
-              <h3 class="pillar-title">Auth & SDK Engineering</h3>
-              <p class="pillar-desc">Managing multi-language libraries (React, JS, Node, Python, Rust, Go) and guiding developers through PropelAuth integrations.</p>
+              <div class="pillar-icon"><i class="fas fa-network-wired"></i></div>
+              <h3 class="pillar-title">Forward Deployed & Solutions</h3>
+              <p class="pillar-desc">Navigating complex client codebases, architecting custom API integrations, and leading end-to-end technical deployments for enterprise teams.</p>
             </div>
             <div class="pillar-card">
               <div class="pillar-icon"><i class="fas fa-robot"></i></div>
-              <h3 class="pillar-title">AI & MCP Servers</h3>
-              <p class="pillar-desc">Authoring Model Context Protocol (MCP) servers allowing AI agents to seamlessly configure and integrate authentication workflows.</p>
+              <h3 class="pillar-title">Multi-SDK & AI Tooling</h3>
+              <p class="pillar-desc">Maintaining multi-language client libraries (React, JS, Node, Python, Rust, Go) and building Model Context Protocol (MCP) servers for AI developer agents.</p>
             </div>
             <div class="pillar-card">
-              <div class="pillar-icon"><i class="fas fa-book-bookmark"></i></div>
-              <h3 class="pillar-title">Technical Docs & Support</h3>
-              <p class="pillar-desc">Writing developer guides, product documentation, and assisting engineers across email, Slack, and live technical sessions.</p>
+              <div class="pillar-icon"><i class="fas fa-users-gear"></i></div>
+              <h3 class="pillar-title">Customer & Enterprise Eng</h3>
+              <p class="pillar-desc">Translating client requirements into production code, conducting live technical consultations, authoring docs, and advocating for developer needs.</p>
             </div>
             <div class="pillar-card">
-              <div class="pillar-icon"><i class="fas fa-compass"></i></div>
-              <h3 class="pillar-title">Team Leadership</h3>
-              <p class="pillar-desc">Proven background managing diverse teams through high-consequence outdoor expeditions and technical support operations.</p>
+              <div class="pillar-icon"><i class="fas fa-sliders"></i></div>
+              <h3 class="pillar-title">Developer Experience & Docs</h3>
+              <p class="pillar-desc">Authoring comprehensive technical guides, API documentation, and unblocking complex developer integrations across live channels.</p>
             </div>
           </div>
         </div>
@@ -224,62 +218,37 @@
     <section class="skills-section" id="skills">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag"><i class="fas fa-laptop-code"></i> Technical Stack</span>
+          <span class="section-tag">[02] TECHNICAL_CAPABILITIES.JSON</span>
           <h2 class="section-title">Languages & <span class="gradient-text">Technologies</span></h2>
-          <p class="section-subtitle">Tools and frameworks I use to bring ideas to life.</p>
+          <p class="section-subtitle">Tools, languages, and platforms I leverage for solutions engineering.</p>
         </div>
 
         <div class="skills-filter">
-          <button class="filter-btn active" data-filter="all">All Skills</button>
-          <button class="filter-btn" data-filter="frontend">Frontend</button>
-          <button class="filter-btn" data-filter="backend">Backend & DB</button>
-          <button class="filter-btn" data-filter="tools">Tools & Platforms</button>
+          <button class="filter-btn active" data-filter="all">[ALL SKILLS]</button>
+          <button class="filter-btn" data-filter="languages">[SDKs & LANGUAGES]</button>
+          <button class="filter-btn" data-filter="solutions">[SOLUTIONS & APIS]</button>
+          <button class="filter-btn" data-filter="platforms">[ENTERPRISE PLATFORMS]</button>
         </div>
 
         <div class="skills-grid">
-          <!-- Frontend -->
-          <div class="skill-card glass-card" data-category="frontend">
+          <!-- Languages & SDKs -->
+          <div class="skill-card" data-category="languages">
             <div class="skill-icon-wrapper"><i class="fab fa-react"></i></div>
             <div class="skill-info">
-              <h4 class="skill-name">React.js</h4>
-              <span class="skill-cat">Frontend</span>
+              <h4 class="skill-name">React.js / TypeScript</h4>
+              <span class="skill-cat">Frontend SDKs</span>
             </div>
           </div>
 
-          <div class="skill-card glass-card" data-category="frontend">
-            <div class="skill-icon-wrapper"><i class="fab fa-js-square"></i></div>
-            <div class="skill-info">
-              <h4 class="skill-name">JavaScript (ES6+)</h4>
-              <span class="skill-cat">Language</span>
-            </div>
-          </div>
-
-          <div class="skill-card glass-card" data-category="frontend">
-            <div class="skill-icon-wrapper"><i class="fab fa-html5"></i></div>
-            <div class="skill-info">
-              <h4 class="skill-name">HTML5 & CSS3</h4>
-              <span class="skill-cat">Frontend</span>
-            </div>
-          </div>
-
-          <div class="skill-card glass-card" data-category="frontend">
-            <div class="skill-icon-wrapper"><i class="fas fa-code-branch"></i></div>
-            <div class="skill-info">
-              <h4 class="skill-name">DOM & Modern Web APIs</h4>
-              <span class="skill-cat">Frontend</span>
-            </div>
-          </div>
-
-          <!-- Backend & Languages -->
-          <div class="skill-card glass-card" data-category="backend">
+          <div class="skill-card" data-category="languages">
             <div class="skill-icon-wrapper"><i class="fab fa-node-js"></i></div>
             <div class="skill-info">
-              <h4 class="skill-name">Node.js / Express</h4>
-              <span class="skill-cat">Backend</span>
+              <h4 class="skill-name">Node.js & Express</h4>
+              <span class="skill-cat">Backend SDKs</span>
             </div>
           </div>
 
-          <div class="skill-card glass-card" data-category="backend">
+          <div class="skill-card" data-category="languages">
             <div class="skill-icon-wrapper"><i class="fab fa-python"></i></div>
             <div class="skill-info">
               <h4 class="skill-name">Python</h4>
@@ -287,7 +256,7 @@
             </div>
           </div>
 
-          <div class="skill-card glass-card" data-category="backend">
+          <div class="skill-card" data-category="languages">
             <div class="skill-icon-wrapper"><i class="fab fa-rust"></i></div>
             <div class="skill-info">
               <h4 class="skill-name">Rust & Go</h4>
@@ -295,48 +264,41 @@
             </div>
           </div>
 
-          <div class="skill-card glass-card" data-category="backend">
-            <div class="skill-icon-wrapper"><i class="fas fa-database"></i></div>
-            <div class="skill-info">
-              <h4 class="skill-name">MySQL & MongoDB</h4>
-              <span class="skill-cat">Database</span>
-            </div>
-          </div>
-
-          <div class="skill-card glass-card" data-category="backend">
-            <div class="skill-icon-wrapper"><i class="fas fa-plug"></i></div>
-            <div class="skill-info">
-              <h4 class="skill-name">REST & WebSockets</h4>
-              <span class="skill-cat">APIs</span>
-            </div>
-          </div>
-
-          <!-- Tools -->
-          <div class="skill-card glass-card" data-category="tools">
+          <!-- Solutions & APIs -->
+          <div class="skill-card" data-category="solutions">
             <div class="skill-icon-wrapper"><i class="fas fa-shield-cat"></i></div>
             <div class="skill-info">
-              <h4 class="skill-name">PropelAuth & Auth SDKs</h4>
-              <span class="skill-cat">Authentication & SDKs</span>
+              <h4 class="skill-name">PropelAuth & Auth Protocols</h4>
+              <span class="skill-cat">OAuth, OIDC, SAML, Passkeys</span>
             </div>
           </div>
 
-          <div class="skill-card glass-card" data-category="tools">
+          <div class="skill-card" data-category="solutions">
             <div class="skill-icon-wrapper"><i class="fas fa-robot"></i></div>
             <div class="skill-info">
               <h4 class="skill-name">MCP Servers & AI Tools</h4>
-              <span class="skill-cat">Agent Integration</span>
+              <span class="skill-cat">AI Agent Integration</span>
             </div>
           </div>
 
-          <div class="skill-card glass-card" data-category="tools">
-            <div class="skill-icon-wrapper"><i class="fas fa-check-double"></i></div>
+          <div class="skill-card" data-category="solutions">
+            <div class="skill-icon-wrapper"><i class="fas fa-plug"></i></div>
             <div class="skill-info">
-              <h4 class="skill-name">ClickUp Platform</h4>
-              <span class="skill-cat">Technical Support & SaaS</span>
+              <h4 class="skill-name">REST APIs & Webhooks</h4>
+              <span class="skill-cat">Integration Engineering</span>
             </div>
           </div>
 
-          <div class="skill-card glass-card" data-category="tools">
+          <div class="skill-card" data-category="solutions">
+            <div class="skill-icon-wrapper"><i class="fas fa-database"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">MySQL & MongoDB</h4>
+              <span class="skill-cat">Databases</span>
+            </div>
+          </div>
+
+          <!-- Platforms -->
+          <div class="skill-card" data-category="platforms">
             <div class="skill-icon-wrapper"><i class="fas fa-cloud"></i></div>
             <div class="skill-info">
               <h4 class="skill-name">BetterCloud Platform</h4>
@@ -344,19 +306,19 @@
             </div>
           </div>
 
-          <div class="skill-card glass-card" data-category="tools">
-            <div class="skill-icon-wrapper"><i class="fab fa-git-alt"></i></div>
+          <div class="skill-card" data-category="platforms">
+            <div class="skill-icon-wrapper"><i class="fas fa-check-double"></i></div>
             <div class="skill-info">
-              <h4 class="skill-name">Git & GitHub</h4>
-              <span class="skill-cat">Version Control</span>
+              <h4 class="skill-name">ClickUp Architecture</h4>
+              <span class="skill-cat">Technical Support</span>
             </div>
           </div>
 
-          <div class="skill-card glass-card" data-category="tools">
-            <div class="skill-icon-wrapper"><i class="fas fa-terminal"></i></div>
+          <div class="skill-card" data-category="platforms">
+            <div class="skill-icon-wrapper"><i class="fab fa-git-alt"></i></div>
             <div class="skill-info">
-              <h4 class="skill-name">VS Code / CLI</h4>
-              <span class="skill-cat">Development</span>
+              <h4 class="skill-name">Git & Release Pipelines</h4>
+              <span class="skill-cat">Version Control</span>
             </div>
           </div>
         </div>
@@ -367,76 +329,78 @@
     <section class="timeline-section" id="experience">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
-          <h2 class="section-title">Career & <span class="gradient-text">Background</span></h2>
-          <p class="section-subtitle">My professional journey in tech and leadership.</p>
+          <span class="section-tag">[03] CAREER_TRACK.LOG</span>
+          <h2 class="section-title">Career <span class="gradient-text">Commit History</span></h2>
+          <p class="section-subtitle">My professional journey in solutions, support engineering, and leadership.</p>
         </div>
 
         <div class="timeline-container">
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <span class="timeline-date">Present • Support Engineering</span>
+          <div class="git-timeline-card">
+            <div class="git-timeline-header">
+              <span><i class="fas fa-code-commit" style="color: var(--primary); margin-right: 0.5rem;"></i> <span class="git-commit-hash">commit 9f2a41</span></span>
+              <span class="git-tag">tag: propelauth (HEAD -> main)</span>
+            </div>
+            <div class="git-timeline-body">
+              <span class="mono" style="color: var(--primary); font-size: 0.8rem; font-weight: 700;">PRESENT • SUPPORT & SOLUTIONS ENGINEERING</span>
               <h3 class="timeline-title">Support Engineer</h3>
-              <h4 class="timeline-company">PropelAuth</h4>
+              <h4 class="timeline-company">@PropelAuth</h4>
               <p class="timeline-body">
                 Guiding customers through PropelAuth authentication integrations via email, Slack, and live video calls. Managing multi-language client libraries across React, JavaScript, Node, Express, Python, Rust, and Go. Authoring technical documentation, developer guides, and multiple Model Context Protocol (MCP) servers to assist developer AI agents in integrating PropelAuth.
               </p>
             </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <span class="timeline-date">Customer Engineering</span>
+          <div class="git-timeline-card">
+            <div class="git-timeline-header">
+              <span><i class="fas fa-code-commit" style="color: var(--secondary); margin-right: 0.5rem;"></i> <span class="git-commit-hash">commit 7b1c83</span></span>
+              <span class="git-tag">tag: bettercloud</span>
+            </div>
+            <div class="git-timeline-body">
+              <span class="mono" style="color: var(--secondary); font-size: 0.8rem; font-weight: 700;">CUSTOMER ENGINEERING</span>
               <h3 class="timeline-title">Customer Engineer</h3>
-              <h4 class="timeline-company">BetterCloud</h4>
+              <h4 class="timeline-company">@BetterCloud</h4>
               <p class="timeline-body">
                 Collaborated with enterprise clients and IT leaders to implement automated SaaS management workflows, debug complex API integrations, and deliver technical solutions across cloud platforms.
               </p>
             </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <span class="timeline-date">Technical Operations & Support</span>
+          <div class="git-timeline-card">
+            <div class="git-timeline-header">
+              <span><i class="fas fa-code-commit" style="color: var(--lime); margin-right: 0.5rem;"></i> <span class="git-commit-hash">commit 4e9d12</span></span>
+              <span class="git-tag">tag: clickup</span>
+            </div>
+            <div class="git-timeline-body">
+              <span class="mono" style="color: var(--lime); font-size: 0.8rem; font-weight: 700;">TECHNICAL OPERATIONS</span>
               <h3 class="timeline-title">Senior Technical Support Specialist</h3>
-              <h4 class="timeline-company">ClickUp</h4>
+              <h4 class="timeline-company">@ClickUp</h4>
               <p class="timeline-body">
                 Delivered advanced technical support and troubleshooting for complex workflows, product integrations, webhooks, and enterprise users within the ClickUp platform architecture.
               </p>
             </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <span class="timeline-date">Full Stack Engineering</span>
+          <div class="git-timeline-card">
+            <div class="git-timeline-header">
+              <span><i class="fas fa-code-commit" style="color: var(--amber); margin-right: 0.5rem;"></i> <span class="git-commit-hash">commit 2a01ef</span></span>
+              <span class="git-tag">tag: boot-camp</span>
+            </div>
+            <div class="git-timeline-body">
+              <span class="mono" style="color: var(--amber); font-size: 0.8rem; font-weight: 700;">FULL STACK ENGINEERING</span>
               <h3 class="timeline-title">Full Stack Web Development</h3>
-              <h4 class="timeline-company">University of Utah Bootcamp</h4>
+              <h4 class="timeline-company">@University of Utah Bootcamp</h4>
               <p class="timeline-body">
                 Intensive 24-week full-stack web development program focused on JavaScript, React, Node.js, Express, MySQL, MongoDB, and agile team collaboration.
               </p>
             </div>
           </div>
 
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content glass-card">
-              <span class="timeline-date">Leadership & Operations</span>
-              <h3 class="timeline-title">Outdoor Expedition Leader</h3>
-              <h4 class="timeline-company">Wilderness Expeditions</h4>
-              <p class="timeline-body">
-                Planned and led remote outdoor expeditions, managing team safety, logistics, and risk mitigation in high-altitude environments across the Western US.
-              </p>
-            </div>
-          </div>
+
         </div>
 
         <div class="resume-banner">
-          <h3 class="resume-banner-title">Interested in my full background?</h3>
-          <p class="resume-banner-desc">You can view my complete resume online or download the PDF document directly.</p>
+          <h3 class="resume-banner-title">Looking for a Forward Deployed or Solutions Engineer?</h3>
+          <p class="resume-banner-desc">I'm ready to help your enterprise clients succeed with hands-on code execution, SDK architecture, and technical leadership.</p>
           <div class="resume-banner-actions">
             <button class="btn btn-primary open-resume-modal">
               <i class="fas fa-eye"></i> Preview Resume
@@ -453,20 +417,20 @@
     <section class="contact-section" id="contact">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag"><i class="fas fa-paper-plane"></i> Connect</span>
+          <span class="section-tag">[04] CONTACT.SH</span>
           <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-          <p class="section-subtitle">Have a project, collaboration opportunity, or question? Feel free to reach out!</p>
+          <p class="section-subtitle">Interested in discussing Forward Deployed, Solutions, or Customer Engineering roles? Reach out anytime!</p>
         </div>
 
         <div class="contact-grid">
-          <div class="contact-info-card glass-card">
+          <div class="contact-info-card">
             <div>
-              <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Contact Information</h3>
+              <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Direct Channels</h3>
 
               <div class="contact-method">
                 <div class="contact-icon"><i class="fas fa-envelope"></i></div>
                 <div class="contact-details">
-                  <label>Email</label>
+                  <label>EMAIL</label>
                   <div class="contact-value">
                     pfvatterott@gmail.com
                     <button class="copy-btn" data-copy="pfvatterott@gmail.com" title="Copy Email">
@@ -479,7 +443,7 @@
               <div class="contact-method">
                 <div class="contact-icon"><i class="fas fa-phone"></i></div>
                 <div class="contact-details">
-                  <label>Phone</label>
+                  <label>PHONE</label>
                   <div class="contact-value">
                     651-308-4855
                     <button class="copy-btn" data-copy="651-308-4855" title="Copy Phone">
@@ -492,14 +456,14 @@
               <div class="contact-method">
                 <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
                 <div class="contact-details">
-                  <label>Location</label>
+                  <label>LOCATION</label>
                   <div class="contact-value">Salt Lake City, UT</div>
                 </div>
               </div>
             </div>
 
             <div>
-              <label style="display: block; font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Follow & Socials</label>
+              <label style="display: block; font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; margin-bottom: 0.75rem;">SOCIAL_PROFILES</label>
               <div class="social-links-grid">
                 <a href="https://github.com/pfvatterott" target="_blank" class="social-btn" title="GitHub">
                   <i class="fab fa-github"></i>
@@ -517,26 +481,26 @@
             </div>
           </div>
 
-          <div class="contact-form-card glass-card">
-            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send a Message</h3>
+          <div class="contact-form-card">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send Message</h3>
             <form id="contact-form">
               <div class="form-group">
-                <label for="name" class="form-label">Your Name *</label>
+                <label for="name" class="form-label">YOUR_NAME *</label>
                 <input type="text" id="name" class="form-input" placeholder="e.g. Alex Morgan" required>
               </div>
 
               <div class="form-group">
-                <label for="email" class="form-label">Your Email *</label>
+                <label for="email" class="form-label">YOUR_EMAIL *</label>
                 <input type="email" id="email" class="form-input" placeholder="e.g. alex@example.com" required>
               </div>
 
               <div class="form-group">
-                <label for="subject" class="form-label">Subject</label>
-                <input type="text" id="subject" class="form-input" placeholder="Project Inquiry / Collaboration">
+                <label for="subject" class="form-label">SUBJECT</label>
+                <input type="text" id="subject" class="form-input" placeholder="Engineering Opportunity / Inquiry">
               </div>
 
               <div class="form-group">
-                <label for="message" class="form-label">Message *</label>
+                <label for="message" class="form-label">MESSAGE *</label>
                 <textarea id="message" class="form-textarea" placeholder="How can I help you?" required></textarea>
               </div>
 
@@ -556,7 +520,7 @@
       <div class="footer-content">
         <div class="footer-brand">
           <h3 class="gradient-text">Paul Vatterott</h3>
-          <p>Customer Engineer & Full-Stack Developer • Salt Lake City, UT</p>
+          <p class="mono" style="color: var(--text-muted); font-size: 0.9rem;">Forward Deployed & Solutions Engineering • Salt Lake City, UT</p>
         </div>
 
         <button class="back-to-top" title="Back to Top">
@@ -566,7 +530,6 @@
 
       <div class="footer-bottom">
         <span>© <span id="year">2026</span> Paul Vatterott. All rights reserved.</span>
-        <span>Built with HTML5, Modern Vanilla CSS & JavaScript.</span>
       </div>
     </div>
   </footer>
@@ -575,7 +538,7 @@
   <div class="modal-backdrop" id="resume-modal">
     <div class="modal-content">
       <div class="modal-header">
-        <h3 class="modal-title"><i class="fas fa-file-pdf" style="color: var(--primary); margin-right: 0.5rem;"></i> Resume Preview — Paul Vatterott</h3>
+        <h3 class="modal-title mono"><i class="fas fa-file-pdf" style="color: var(--primary); margin-right: 0.5rem;"></i> Resume_Preview.pdf — Paul Vatterott</h3>
         <button class="modal-close">&times;</button>
       </div>
       <div class="modal-body">
