@@ -3,462 +3,601 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paul Vatterott</title>
-  <!-- Material Icon CDN -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Materialize CSS CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- CSS Stylesheet --> 
+  
+  <title>Paul Vatterott — Customer Engineer & Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Paul Vatterott — Customer Engineer & Full-Stack Developer based out of Salt Lake City, UT. Specializing in Web Development, SaaS Systems, and Technical Solutions.">
+  <meta name="author" content="Paul Vatterott">
+
+  <!-- Open Graph / Social Meta Tags -->
+  <meta property="og:title" content="Paul Vatterott — Customer Engineer & Full-Stack Developer">
+  <meta property="og:description" content="Building scalable web applications, SaaS tools, and technical solutions in Salt Lake City, UT.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://paul-vatterott.com/">
+  <meta property="og:image" content="./assets/profile-picture.jpg">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css">
- <!-- Font Awesome -->
- <link rel="preconnect" href="https://fonts.gstatic.com">
- <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Offside&display=swap" rel="stylesheet">
- <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-   integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-   crossorigin="anonymous" />
-  <!-- Favicon -->
+
+  <!-- Favicons -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8SPQ3W4JVY"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-8SPQ3W4JVY');
   </script>
 </head>
 
 <body>
 
-  <!-- Navbar -->
+  <!-- Top Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar"></div>
+  </div>
 
-  <header>
-    <div class="navbar-fixed">
-      <nav>
-        <div class="nav-wrapper">
-          <div class="container">
-            <a href="#" class="brand-logo">
-              <img src="./assets/logo.png" alt="Paul Vatterott Logo" id="logo">
-            </a>
-            <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a href="#Contact">Contact</a></li>
-              <li><a href="#Languages">Languages and Skills</a></li>
-              <li><a href="#Portfolio">Portfolio</a></li>
-            </ul>
-            <ul class="side-nav" id="mobile-menu">
-              <li>
-                <div class="userView">
-                  <a href="#!user"><img class="circle"
-                      src="https://ca.slack-edge.com/T01EK8F49FD-U01EQLMH3S6-10ba5fdbd101-512"
-                      alt="User Image Sidenav"></a>
-                  <a href="#!name"><span class="black-text name">Paul Vatterott</span></a>
-                  <a href="#!email"><span class="black-text email">pfvatterott@gmail.com</span></a>
-                </div>
-              </li>
-              <li><a href="#Contact">Contact</a></li>
-              <li><a href="#Languages">Languages and Skills</a></li>
-              <li><a href="#PortfolioMobile">Portfolio</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <!-- Background Particle Topography Canvas -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="nav-logo">
+        <img src="./assets/logo.png" alt="Paul Vatterott Logo">
+        <span>Paul Vatterott</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-outline btn-sm open-resume-modal">
+          <i class="fas fa-file-pdf"></i> Resume
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm">
+          Get In Touch
+        </a>
+      </div>
+
+      <button class="mobile-toggle" aria-label="Toggle Menu">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </header>
 
-  <!-- Main -->
-  <main>
-
-    <!-- First Parallax -->
-
-    <div class="parallax-container">
-      <div class="parallax"><img src="./assets/main-background.png" alt="A keyboard and mouse"></div>
+  <!-- Mobile Menu Drawer -->
+  <div class="mobile-menu">
+    <div>
+      <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 2rem;">
+        <div class="nav-logo">
+          <img src="./assets/logo.png" alt="Logo">
+          <span>Paul Vatterott</span>
+        </div>
+      </div>
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link"><i class="fas fa-user-astronaut"></i> About</a></li>
+        <li><a href="#skills" class="mobile-nav-link"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="#experience" class="mobile-nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+        <li><a href="#contact" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
     </div>
+
+    <div style="display: flex; flex-direction: column; gap: 1rem;">
+      <a href="./assets/Paul Vatterott Resume.pdf" download class="btn btn-primary" style="width: 100%;">
+        <i class="fas fa-download"></i> Download Resume PDF
+      </a>
+    </div>
+  </div>
+  <div class="mobile-menu-backdrop"></div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            <span>Support Engineer at PropelAuth • Salt Lake City, UT</span>
+          </div>
+
+          <h1 class="hero-title">
+            Empowering Developers & Building <span class="gradient-text">Authentication Tooling</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Based in <strong style="color: var(--text-main);">Salt Lake City, UT</strong>. Support Engineer at <strong>PropelAuth</strong> managing multi-language SDKs (React, Node, Python, Rust, Go), authoring MCP servers for AI agents, and writing developer docs.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#experience" class="btn btn-primary">
+              <i class="fas fa-briefcase"></i> View Experience
+            </a>
+            <button class="btn btn-outline open-resume-modal">
+              <i class="fas fa-eye"></i> View Resume
+            </button>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i> Contact Me
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-num gradient-text">PropelAuth</span>
+              <span class="metric-label">Support Engineer</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-num">Multi-SDK</span>
+              <span class="metric-label">JS, Python, Rust, Go</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-num gradient-text-alt">AI & MCP</span>
+              <span class="metric-label">Agent Tooling & Docs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="profile-card-container">
+            <div class="profile-avatar-frame">
+              <img src="./assets/profile-picture.jpg" alt="Paul Vatterott" class="profile-img">
+            </div>
+            <div class="floating-badge">
+              <i class="fas fa-mountain"></i>
+              <div class="floating-badge-text">
+                <span class="floating-badge-title">Salt Lake City, UT</span>
+                <span class="floating-badge-sub">Full Stack & Solutions</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+          <h2 class="section-title">Expedition Leadership <span class="gradient-text">Meets Code</span></h2>
+          <p class="section-subtitle">A unique blend of high-stakes team management, technical problem-solving, and web application architecture.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-card">
+            <p class="about-paragraph">
+              I'm a Support Engineer at <strong>PropelAuth</strong> currently based out of Salt Lake City, Utah. I support and guide developers with integrating PropelAuth into their applications via email, Slack, and video calls. My work spans managing multi-language client libraries (React, JavaScript, Node, Express, Python, Rust, and Go), writing comprehensive technical documentation, and building Model Context Protocol (MCP) servers to assist developer AI agents.
+            </p>
+            <div class="highlight-box">
+              <p><i class="fas fa-quote-left" style="color: var(--primary); margin-right: 0.5rem;"></i> "Leading mountain expeditions taught me adaptability, clear communication under pressure, and relentless problem-solving—skills that directly empower developers integrating complex authentication & software systems."</p>
+            </div>
+            <p class="about-paragraph">
+              With a background spanning <strong>PropelAuth</strong>, <strong>BetterCloud</strong>, and <strong>ClickUp</strong>, I bridge deep technical SDK engineering with user guidance, developer experience, and product documentation.
+            </p>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fas fa-shield-halved"></i></div>
+              <h3 class="pillar-title">Auth & SDK Engineering</h3>
+              <p class="pillar-desc">Managing multi-language libraries (React, JS, Node, Python, Rust, Go) and guiding developers through PropelAuth integrations.</p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fas fa-robot"></i></div>
+              <h3 class="pillar-title">AI & MCP Servers</h3>
+              <p class="pillar-desc">Authoring Model Context Protocol (MCP) servers allowing AI agents to seamlessly configure and integrate authentication workflows.</p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fas fa-book-bookmark"></i></div>
+              <h3 class="pillar-title">Technical Docs & Support</h3>
+              <p class="pillar-desc">Writing developer guides, product documentation, and assisting engineers across email, Slack, and live technical sessions.</p>
+            </div>
+            <div class="pillar-card">
+              <div class="pillar-icon"><i class="fas fa-compass"></i></div>
+              <h3 class="pillar-title">Team Leadership</h3>
+              <p class="pillar-desc">Proven background managing diverse teams through high-consequence outdoor expeditions and technical support operations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-laptop-code"></i> Technical Stack</span>
+          <h2 class="section-title">Languages & <span class="gradient-text">Technologies</span></h2>
+          <p class="section-subtitle">Tools and frameworks I use to bring ideas to life.</p>
+        </div>
+
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All Skills</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="backend">Backend & DB</button>
+          <button class="filter-btn" data-filter="tools">Tools & Platforms</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrapper"><i class="fab fa-react"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">React.js</h4>
+              <span class="skill-cat">Frontend</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrapper"><i class="fab fa-js-square"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">JavaScript (ES6+)</h4>
+              <span class="skill-cat">Language</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrapper"><i class="fab fa-html5"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">HTML5 & CSS3</h4>
+              <span class="skill-cat">Frontend</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="frontend">
+            <div class="skill-icon-wrapper"><i class="fas fa-code-branch"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">DOM & Modern Web APIs</h4>
+              <span class="skill-cat">Frontend</span>
+            </div>
+          </div>
+
+          <!-- Backend & Languages -->
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-icon-wrapper"><i class="fab fa-node-js"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">Node.js / Express</h4>
+              <span class="skill-cat">Backend</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-icon-wrapper"><i class="fab fa-python"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">Python</h4>
+              <span class="skill-cat">Language & SDKs</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-icon-wrapper"><i class="fab fa-rust"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">Rust & Go</h4>
+              <span class="skill-cat">Systems & SDKs</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-icon-wrapper"><i class="fas fa-database"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">MySQL & MongoDB</h4>
+              <span class="skill-cat">Database</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="backend">
+            <div class="skill-icon-wrapper"><i class="fas fa-plug"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">REST & WebSockets</h4>
+              <span class="skill-cat">APIs</span>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrapper"><i class="fas fa-shield-cat"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">PropelAuth & Auth SDKs</h4>
+              <span class="skill-cat">Authentication & SDKs</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrapper"><i class="fas fa-robot"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">MCP Servers & AI Tools</h4>
+              <span class="skill-cat">Agent Integration</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrapper"><i class="fas fa-check-double"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">ClickUp Platform</h4>
+              <span class="skill-cat">Technical Support & SaaS</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrapper"><i class="fas fa-cloud"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">BetterCloud Platform</h4>
+              <span class="skill-cat">SaaS Operations</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrapper"><i class="fab fa-git-alt"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">Git & GitHub</h4>
+              <span class="skill-cat">Version Control</span>
+            </div>
+          </div>
+
+          <div class="skill-card glass-card" data-category="tools">
+            <div class="skill-icon-wrapper"><i class="fas fa-terminal"></i></div>
+            <div class="skill-info">
+              <h4 class="skill-name">VS Code / CLI</h4>
+              <span class="skill-cat">Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience / Timeline Section -->
+    <section class="timeline-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-briefcase"></i> Experience</span>
+          <h2 class="section-title">Career & <span class="gradient-text">Background</span></h2>
+          <p class="section-subtitle">My professional journey in tech and leadership.</p>
+        </div>
+
+        <div class="timeline-container">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Present • Support Engineering</span>
+              <h3 class="timeline-title">Support Engineer</h3>
+              <h4 class="timeline-company">PropelAuth</h4>
+              <p class="timeline-body">
+                Guiding customers through PropelAuth authentication integrations via email, Slack, and live video calls. Managing multi-language client libraries across React, JavaScript, Node, Express, Python, Rust, and Go. Authoring technical documentation, developer guides, and multiple Model Context Protocol (MCP) servers to assist developer AI agents in integrating PropelAuth.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Customer Engineering</span>
+              <h3 class="timeline-title">Customer Engineer</h3>
+              <h4 class="timeline-company">BetterCloud</h4>
+              <p class="timeline-body">
+                Collaborated with enterprise clients and IT leaders to implement automated SaaS management workflows, debug complex API integrations, and deliver technical solutions across cloud platforms.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Technical Operations & Support</span>
+              <h3 class="timeline-title">Senior Technical Support Specialist</h3>
+              <h4 class="timeline-company">ClickUp</h4>
+              <p class="timeline-body">
+                Delivered advanced technical support and troubleshooting for complex workflows, product integrations, webhooks, and enterprise users within the ClickUp platform architecture.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Full Stack Engineering</span>
+              <h3 class="timeline-title">Full Stack Web Development</h3>
+              <h4 class="timeline-company">University of Utah Bootcamp</h4>
+              <p class="timeline-body">
+                Intensive 24-week full-stack web development program focused on JavaScript, React, Node.js, Express, MySQL, MongoDB, and agile team collaboration.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">Leadership & Operations</span>
+              <h3 class="timeline-title">Outdoor Expedition Leader</h3>
+              <h4 class="timeline-company">Wilderness Expeditions</h4>
+              <p class="timeline-body">
+                Planned and led remote outdoor expeditions, managing team safety, logistics, and risk mitigation in high-altitude environments across the Western US.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="resume-banner">
+          <h3 class="resume-banner-title">Interested in my full background?</h3>
+          <p class="resume-banner-desc">You can view my complete resume online or download the PDF document directly.</p>
+          <div class="resume-banner-actions">
+            <button class="btn btn-primary open-resume-modal">
+              <i class="fas fa-eye"></i> Preview Resume
+            </button>
+            <a href="./assets/Paul Vatterott Resume.pdf" download class="btn btn-outline">
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
-
-    <section class="section white">
-      <div class="row container">
-        <div class="col s12 m6 center-align">
-          <img class="circle main-profile-pic z-depth-3 hoverable scrollspy" id="Contact"
-            src="./assets/profile-picture.jpg" alt="Paul Vatterott profile picture" data-aos="fade-right">
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag"><i class="fas fa-paper-plane"></i> Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-subtitle">Have a project, collaboration opportunity, or question? Feel free to reach out!</p>
         </div>
-        <div class="col s12 m6">
-          <h2 class="header" data-aos="fade-left">Paul Vatterott</h2>
-          <h4 class="grey-text text-darken-3 lighten-3" data-aos="fade-left">Full-Stack Web Developer</h4>
-          <p class="grey-text text-darken-3 lighten-3" data-aos="fade-left">Based out of Salt Lake City, UT and recent 
-            graduate the University of Utah Web Development Bootcamp. Currently employed as a Customer Engineer at BetterCloud!</p>
-          <span style="font-size: 3em">
-            <a href="https://github.com/pfvatterott" target="_blank"
-              class="hoverable btn-floating btn-large contact-icons z-depth-4" data-aos="flip-left">
-              <i class="fab fa-github tooltipped " data-tooltip="Github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/paul-vatterott/" target="_blank" style="color:#00bcd4"
-              class="hoverable btn-floating btn-large contact-icons z-depth-4" data-aos="flip-left">
-              <i class="fab fa-linkedin-in tooltipped hoverable" data-tooltip="LinkedIn"></i>
-            </a>
-            <a href="https://www.instagram.com/pppaaaauuuullllll/" target="_blank" style="color:#00bcd4"
-              class="hoverable btn-floating btn-large contact-icons z-depth-4" data-aos="flip-left">
-              <i class="fab fa-instagram tooltipped" data-tooltip="Instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/paul.vatterott/" target="_blank" style="color:#00bcd4"
-              class="hoverable btn-floating btn-large contact-icons z-depth-4" data-aos="flip-left">
-              <i class="fab fa-facebook tooltipped" data-tooltip="Facebook"></i>
-            </a>
-            <a href="mailto:pfvatterott@gmail.com" target="_blank" style="color:#00bcd4"
-              class="hoverable btn-floating btn-large contact-icons z-depth-4" data-aos="flip-left">
-              <i class="far fa-envelope tooltipped" data-tooltip="Email"></i>
-            </a>
-          </span>
+
+        <div class="contact-grid">
+          <div class="contact-info-card glass-card">
+            <div>
+              <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Contact Information</h3>
+
+              <div class="contact-method">
+                <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="contact-details">
+                  <label>Email</label>
+                  <div class="contact-value">
+                    pfvatterott@gmail.com
+                    <button class="copy-btn" data-copy="pfvatterott@gmail.com" title="Copy Email">
+                      <i class="far fa-copy"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                <div class="contact-details">
+                  <label>Phone</label>
+                  <div class="contact-value">
+                    651-308-4855
+                    <button class="copy-btn" data-copy="651-308-4855" title="Copy Phone">
+                      <i class="far fa-copy"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                <div class="contact-details">
+                  <label>Location</label>
+                  <div class="contact-value">Salt Lake City, UT</div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label style="display: block; font-size: 0.8rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem;">Follow & Socials</label>
+              <div class="social-links-grid">
+                <a href="https://github.com/pfvatterott" target="_blank" class="social-btn" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/paul-vatterott/" target="_blank" class="social-btn" title="LinkedIn">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/pppaaaauuuullllll/" target="_blank" class="social-btn" title="Instagram">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/paul.vatterott/" target="_blank" class="social-btn" title="Facebook">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card glass-card">
+            <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Send a Message</h3>
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name *</label>
+                <input type="text" id="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email *</label>
+                <input type="email" id="email" class="form-input" placeholder="e.g. alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" class="form-input" placeholder="Project Inquiry / Collaboration">
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" class="form-textarea" placeholder="How can I help you?" required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
-
-    <!-- Second Parallax -->
-
-    <div class="parallax-container">
-      <div class="parallax"><img src="./assets/background-2.jpg" alt="Computer screen with code"></div>
-    </div>
-
-    <!-- Languages and Skills Section -->
-
-    <section class="section white scrollspy" id="Languages">
-      <div class="row container">
-        <div class="col s12 m5">
-          <h3 class="header grey-text text-darken-3 lighten-3" data-aos="fade-right">Languages and Skills</h3>
-          <p class="grey-text text-darken-3 lighten-3" data-aos="fade-right">
-            <br>
-            Full Stack Web Developer Bootcamp graduate with a passion for problem solving, working with others, learning, and making products I’m proud of. 
-            My natural curiosity paired with a strong work ethic means I am always looking to
-            improve my skills.
-            <br><br>
-            Through past experiences leading countless outdoors expeditions I have acquired the ability to work with and
-            manage teams of varying sizes. I naturally like to take the reins to solve problems while also feeling
-            content to step back and learn from others.
-            <br><br>
-            I am currently employed as a Customer Engineer at BetterCloud! I'm always looking to collaborate with new people on new projects, so feel free to reach out if you're interested!
-          </p>
-          <span style="font-size: 3em; color:#00bcd4;">
-            <a class="hoverable btn-floating btn-large language-icons z-depth-4" data-aos="flip-left">
-              <i class="fab fa-html5 tooltipped" data-tooltip="HTML5"></i>
-            </a>
-            <a class="hoverable btn-floating btn-large language-icons z-depth-4" data-aos="flip-left">
-              <i class="fab fa-css3 tooltipped" data-tooltip="CSS"></i>
-            </a>
-            <a class="hoverable btn-floating btn-large language-icons z-depth-4" data-aos="flip-left">
-              <i class="fab fa-windows tooltipped" data-tooltip="Visual Studio Code"></i>
-            </a>
-            <a class="hoverable btn-floating btn-large language-icons z-depth-4" data-aos="flip-left">
-              <i class="fab fa-js-square tooltipped" data-tooltip="Javascript"></i>
-            </a>
-            <a class="hoverable btn-floating btn-large language-icons z-depth-4" data-aos="flip-left">
-              <i class="fab fa-node-js tooltipped" data-tooltip="Node-js"></i>
-            </a>
-            <a class="hoverable btn-floating btn-large language-icons z-depth-4" data-aos="flip-left">
-              <i class="fas fa-database tooltipped" data-tooltip="MySql & MongoDB"></i>
-            </a>
-            <a class="hoverable btn-floating btn-large language-icons z-depth-4" data-aos="flip-left">
-              <i class="fab fa-react tooltipped" data-tooltip="ReactJS"></i>
-            </a>
-          </span>
-          <div class="row container"></div>
-        </div>
-        <div class="col s12 m1"></div>
-        <div class="col s12 m3">
-          <img class="materialboxed z-depth-3 hoverable resume" src="assets/resume_screenshot1.png"
-            alt="screenshot of resume1" data-aos="fade-left">
-        </div>
-        <div class="col s12 m3">
-          <img class="materialboxed z-depth-3 hoverable resume" src="assets/resume_screenshot2.png"
-            alt="screenshot of resume2" data-aos="fade-left">
-        </div>
-          
-      </div>
-      <div class="row container hide-on-med-and-down">
-        <div class="col s12 m7"></div>
-        <div class="col s12 m1">
-          <a href="./assets/Paul Vatterott Resume.pdf" download class="waves-effect waves-light btn-large download-button center-align"
-            data-aos="fade-left"><i class="material-icons left">download</i>pdf resume</a>
-        </div>
-        <div class="col s12 m3"></div>
-      </div>
-      <div class="row container hide-on-large-only">
-        <div class="col s12 m7"></div>
-        <div class="col s12 m1">
-          <a href="./assets/Paul Vatterott Resume.pdf" download class="waves-effect waves-light btn-large download-button-small center-align"
-            data-aos="fade-left"><i class="material-icons left">download</i>pdf resume</a>
-        </div>
-        <div class="col s12 m3"></div>
-      </div>
-    </section>
-
-    <!-- Third Parallax -->
-
-    <div class="parallax-container">
-      <div class="parallax"><img src="./assets/background-3.jpg" alt="computer screen with code"></div>
-    </div>
-
-    <!-- Project Cards -->
-
-    <br><br>
-    <section class="section white scrollspy hide-on-med-and-down" id="Portfolio">
-      <h2 class="center-align" data-aos="fade-down">My Projects</h2>
-      <br><br>
-      <div class="row container best-snow-container">
-        <br>
-        <div class="col s12 m5">
-          <div class="card-panel center-align best-snow-border z-depth-5 hoverable" data-aos="fade-right">
-            <a href="https://pfvatterott.github.io/BestSnow/" target="_blank"><img class="responsive-img best-snow"
-                data-aos="fade-right" src="assets/bestsnowscreenshot.png" alt="screenshot of weather dashboard"
-                height="500" /></a>
-          </div>
-        </div>
-        <div class="col s12 m1"></div>
-        <div class="col s12 m1">
-          <br><br>
-          <img class="responsive-img line" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000"
-            src="assets/Vertical-Line.png" alt="screenshot of weather dashboard" />
-        </div>
-        <div class="col s12 m5">
-          <br>
-          <h3 class="header grey-text text-darken-3 lighten-3 text-section" data-aos="fade-left">Best Snow</h3>
-          <p class="grey-text text-darken-3 lighten-3 text-section" data-aos="fade-left">
-            <br>
-            Best Snow is a website that shows winter sport enthusiasts how the current snow pack compares to previous
-            winter seasons in hundreds of locations across the Western United States.
-            <br><br>
-            This project was created by a team of four members. My main role was connecting to and communicating with an
-            API, organizing and interpreting data, and building the Map UI and graphs.
-          </p>
-          <br>
-          <a href="https://github.com/pfvatterott/BestSnow" target="_blank" download
-            class="text-section waves-effect waves-light btn-large github-button z-depth-3 hoverable"
-            data-aos="fade-left"><i class="fab fa-github left"></i>Github</a>
-        </div>
-      </div>
-
-      <br><br><br><br>
-
-      <div class="row container note-taker-container">
-        <div class="col s12 m5">
-          <br>
-          <h3 class="header grey-text text-darken-3 lighten-3" data-aos="fade-right">Swapify</h3>
-          <p class="grey-text text-darken-3 lighten-3" data-aos="fade-right">
-            <br>
-            Swapify is a full-stack React App that allows users to list, connect, and swap items with other nearby users in an easy to use and intuitive 
-            web application that is centered around being mobile fist.
-            <br><br>
-            Created by a team of three members, my main role was all backend features including matching, chat, and database creation.
-          </p>
-          <br>
-          <a href="https://github.com/pfvatterott/Swapify" target="_blank" download
-            class="waves-effect waves-light btn-large github-button z-depth-3 hoverable" data-aos="fade-right"><i
-              class="fab fa-github left"></i>Github</a>
-        </div>
-        <div class="col s12 m1">
-          <br><br>
-          <img class="responsive-img line-middle-card" data-aos="fade-down" data-aos-delay="1000"
-            data-aos-duration="1000" src="assets/Vertical-Line.png" alt="screenshot of weather dashboard" />
-        </div>
-        <div class="col s12 m1"></div>
-        <div class="col s12 m5">
-          <div class="card-panel center-align swapify-border z-depth-5 hoverable" data-aos="fade-left">
-            <a href="https://swapify-us.herokuapp.com/" target="_blank"><img
-                class="responsive-img best-snow" data-aos="fade-left" src="assets/swapify_screenshot.png"
-                alt="screenshot of weather dashboard" height="500" /></a>
-          </div>
-        </div>
-      </div>
-
-      <br><br><br><br>
-
-      <div class="row container team-generator-container">
-        <div class="col s12 m5">
-          <div class="card-panel center-align note-border z-depth-5 hoverable" data-aos="fade-right">
-            <a href="https://ndevr.herokuapp.com/" target="_blank"><img
-                class="responsive-img best-snow" data-aos="fade-right" src="assets/ndevrscreenshot.png"
-                alt="screenshot of weather dashboard" height="500" /></a>
-          </div>
-        </div>
-        <div class="col s12 m1"></div>
-        <div class="col s12 m1">
-          <br><br>
-          <img class="responsive-img line" data-aos="fade-down" data-aos-delay="1000" data-aos-duration="1000"
-            src="assets/Vertical-Line.png" alt="screenshot of weather dashboard" />
-        </div>
-        <div class="col s12 m5">
-          <br>
-          <h3 class="header grey-text text-darken-3 lighten-3 text-section" data-aos="fade-left">N-DEVR</h3>
-          <p class="grey-text text-darken-3 lighten-3 text-section" data-aos="fade-left">
-            <br>
-            N-DEVR is a Strava companion app that aims to help adventure seekers plan out their outdoor activities & endeavors. Our team's mission is to easily allow our active outdoor community to plan, organize, and include friends in outdoor pursuits and goals.
-            <br><br>
-            This project was created by a team of two. My main role was backend, database communication, setting up communication with Strava, and creating the map UI.
-          </p>
-          <br>
-          <a href="https://github.com/pfvatterott/N-DEVR" target="_blank" download
-            class="text-section waves-effect waves-light btn-large github-button z-depth-3 hoverable"
-            data-aos="fade-left"><i class="fab fa-github left"></i>Github</a>
-        </div>
-      </div>
-    </section>
-    <br><br>
-
-    <!-- Mobile Portfolio Cards -->
-
-    <section class="section white scrollspy hide-on-large-only" id="PortfolioMobile">
-      <div class="row container">
-        <div class="col s12">
-          <h2 class="center-align" data-aos="fade-down">My Projects</h2>
-          <br><br>
-        </div>
-        <br>
-        <div class="col s12 m5">
-          <div class="card-panel center-align best-snow-border-small z-depth-5 hoverable" data-aos="fade-right">
-            <a href="https://pfvatterott.github.io/BestSnow/" target="_blank"><img
-                class="responsive-img best-snow-small" data-aos="fade-right" src="assets/bestsnowscreenshot.png"
-                alt="screenshot of weather dashboard" /></a>
-          </div>
-        </div>
-        <div class="col s12 m5">
-          <h3 class="header grey-text text-darken-3 lighten-3" data-aos="fade-left">Best Snow</h3>
-          <p class="grey-text text-darken-3 lighten-3" data-aos="fade-left">
-            <br>
-            Best Snow is a website that shows winter sport enthusiasts how the current snow pack compares to previous
-            winter seasons in hundreds of locations across the Western United States.
-            <br><br>
-            This project was created by a team of four members. My main role was connecting to and communicating with an
-            API, organizing and interpreting data, and building the Map UI and graphs.
-          </p>
-          <br>
-          <a href="https://github.com/pfvatterott/BestSnow" target="_blank" download
-            class="waves-effect waves-light btn-large github-button z-depth-3 hoverable" data-aos="fade-left"><i
-              class="fab fa-github left"></i>Github</a>
-        </div>
-      </div>
-
-      <div class="row container">
-        <div class="col s12 m5"></div>
-        <div class="line1-mobile" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000"></div>
-      </div>
-      </div>
-      <div class="row container">
-        <br>
-        <div class="col s12 m5">
-          <div class="card-panel center-align swapify-border-small z-depth-5 hoverable" data-aos="fade-right">
-            <a href="https://swapify-us.herokuapp.com/" target="_blank"><img
-                class="responsive-img best-snow-small" data-aos="fade-right" src="assets/swapify_screenshot.png"
-                alt="screenshot of weather dashboard" /></a>
-          </div>
-        </div>
-        <div class="col s12 m5">
-          <h3 class="header grey-text text-darken-3 lighten-3" data-aos="fade-left">Swapify</h3>
-          <p class="grey-text text-darken-3 lighten-3" data-aos="fade-left">
-            <br>
-            Swapify is a full-stack React App that allows users to list, connect, and swap items with other nearby users in an easy to use and intuitive 
-            web application that is centered around being mobile fist.
-            <br><br>
-            Created by a team of three members, my main role was all backend features including matching, chat, and database creation.
-          </p>
-          <br>
-          <a href="https://github.com/pfvatterott/Swapify" target="_blank" download
-            class="waves-effect waves-light btn-large github-button z-depth-3 hoverable" data-aos="fade-left"><i
-              class="fab fa-github left"></i>Github</a>
-        </div>
-      </div>
-
-      <div class="row container">
-        <div class="col s12 m5"></div>
-        <div class="line1-mobile" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1000"></div>
-      </div>
-      </div>
-      <div class="row container">
-        <br>
-        <div class="col s12 m5">
-          <div class="card-panel center-align note-border-small z-depth-5 hoverable" data-aos="fade-right">
-            <a href="https://ndevr.herokuapp.com/" target="_blank"><img
-                class="responsive-img best-snow-small" data-aos="fade-right" src="assets/ndevrscreenshot.png"
-                alt="screenshot of weather dashboard" /></a>
-          </div>
-        </div>
-        <div class="col s12 m5">
-          <h3 class="header grey-text text-darken-3 lighten-3" data-aos="fade-left">N-DEVR</h3>
-          <p class="grey-text text-darken-3 lighten-3" data-aos="fade-left">
-            <br>
-            N-DEVR is a Strava companion app that aims to help adventure seekers plan out their outdoor activities & endeavors. Our team's mission is to easily allow our active outdoor community to plan, organize, and include friends in outdoor pursuits and goals.
-            <br><br>
-            This project was created by a team of two. My main role was backend, database communication, setting up communication with Strava, and creating the map UI.
-          </p>
-          <br>
-          <a href="https://github.com/pfvatterott/N-DEVR" target="_blank" download
-            class="waves-effect waves-light btn-large github-button z-depth-3 hoverable" data-aos="fade-left"><i
-              class="fab fa-github left"></i>Github</a>
-        </div>
-      </div>
-    </section>
-    <br><br><br>
   </main>
 
-
-
   <!-- Footer -->
-
-  <footer class="page-footer">
+  <footer class="footer">
     <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Paul Vatterott</h5>
-          <p class="grey-text text-lighten-4">pfvatterott@gmail.com</p>
-          <p class="grey-text text-lighten-4">651-308-4855</p>
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h3 class="gradient-text">Paul Vatterott</h3>
+          <p>Customer Engineer & Full-Stack Developer • Salt Lake City, UT</p>
         </div>
+
+        <button class="back-to-top" title="Back to Top">
+          <i class="fas fa-arrow-up"></i>
+        </button>
       </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2021 Copyright Paul Vatterott
+
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Paul Vatterott. All rights reserved.</span>
+        <span>Built with HTML5, Modern Vanilla CSS & JavaScript.</span>
       </div>
     </div>
   </footer>
 
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- jQuery CDN -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
-  <!-- Materialize JS CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <!-- Resume Modal -->
+  <div class="modal-backdrop" id="resume-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title"><i class="fas fa-file-pdf" style="color: var(--primary); margin-right: 0.5rem;"></i> Resume Preview — Paul Vatterott</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="resume-images-container">
+          <img src="assets/resume_screenshot1.png" alt="Resume Page 1" class="resume-img-page">
+          <img src="assets/resume_screenshot2.png" alt="Resume Page 2" class="resume-img-page">
+        </div>
+        <div style="margin-top: 2rem; text-align: center;">
+          <a href="./assets/Paul Vatterott Resume.pdf" download class="btn btn-primary">
+            <i class="fas fa-download"></i> Download Full Resume (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- JavaScript -->
+  <script src="script.js"></script>
   <script>
-    $("document").ready(function () {
-      // materialize initializers
-      $(".button-collapse").sideNav({
-        closeOnClick: true
-      });
-      $('.parallax').parallax();
-      $('.scrollspy').scrollSpy();
-      $('.materialboxed').materialbox();
-      AOS.init();
-
-      // logo fads in and out depending on scroll location
-      $(window).scroll(function () {
-        if ($(this).scrollTop() > 350) {
-          $("#logo").fadeOut(1000);
-        };
-        if ($(this).scrollTop() < 349) {
-          $("#logo").fadeIn(1000);
-        }
-      })
-    });   
+    // Update copyright year dynamically
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
-
 </body>
 
 </html>
