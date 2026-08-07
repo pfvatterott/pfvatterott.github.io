@@ -1,62 +1,33 @@
 <p align="center">
-<img src="./assets/logo.png">
+  <img src="./assets/logo.png" alt="Paul Vatterott Logo" width="80">
 </p>
 
-# Portfolio
+<h1 align="center">Paul Vatterott — Personal Site</h1>
 
-This website's purpose is to demonstrate my abilities in creating a webpage while also showing the user my contact information and portfolio.
+<p align="center">
+  <strong>Forward Deployed, Solutions & Customer Engineer • Salt Lake City, UT</strong>
+</p>
 
-## Description
+<p align="center">
+  <a href="https://paul-vatterott.com/">Live Site (paul-vatterott.com)</a> • 
+  <a href="https://pfvatterott.github.io/">GitHub Pages URL</a>
+</p>
 
-Some fun features of this website:
+---
 
-* A logo that fades out while scrolling down the page and fades back in when scrolling up
-* A resume displayed as a png that is also downloadable as a pdf
-* Scollspy for links in navbar
-* A collapsible navbar for mobile browsing
-* Lots of FABs featuring Font Awesome Icons
-* Cards presenting my various projects
-* Hover effects
-* Tooltips for all buttons
-* Scrolling animations for most buttons, text, and images
+## ⚡ Overview
 
+A modern, high-performance personal site built with HTML5, custom CSS (PostHog-inspired tactile dark mode theme), and Vanilla JavaScript (ES6+). Showcases expertise as a **Forward Deployed, Solutions, and Customer Engineer** currently working at **PropelAuth** (managing multi-language SDKs in React, JS, Node, Python, Rust, Go, writing technical docs, and building AI agent MCP servers), with prior engineering background at **BetterCloud** and **ClickUp**.
 
-## Built With
-* [Materialize CSS](https://materializecss.com/)
-* [JQuery](https://jquery.com/)
-* [Font Awesome](https://fontawesome.com/)
-* [Favicon](https://favicon.io/)
-* [Animate on Scroll](https://michalsnik.github.io/aos/)
+## ✨ Key Features
 
+- **Developer-Native Design System**: PostHog-inspired tactile 3D elements, warm dark slate theme (`#12141c`), electric orange (`#f54e00`) & cyan accents.
+- **Technical Capabilities Grid**: Filterable skills matrix categorized by SDKs & Languages (React, Node, Python, Rust, Go), Solutions & APIs (PropelAuth, OAuth/OIDC, MCP AI Tools), and Enterprise Platforms.
+- **Git Commit Timeline**: Git-log styled career timeline highlighting experience across PropelAuth, BetterCloud, ClickUp, and University of Utah.
+- **In-Browser Resume Viewer**: Interactive modal displaying resume pages and direct PDF downloads.
+- **Click-to-Copy Contact Utilities**: Instant copy-to-clipboard functionality with toast notifications for email and phone.
+- **Fully Responsive**: Mobile-first responsive layout with custom drawer navigation.
 
-## Link to Site
+---
 
-[Click to access my Portfolio!](https://pfvatterott.github.io/)
-
-## Screenshots
-![screenshot](./assets/screenshot1.png)
-![site in action](./assets/screenshot2.png)
-![graphs](./assets/screenshot3.png)
-
-
-
-## Authors
-
-### Paul Vatterott
-[Github](https://github.com/pfvatterott) <br>
-Email: pfvatterott@gmail.com
-
-## License
-MIT License
-
-Copyright (c) 2021 Paul Vatterott
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-
+© 2026 Paul Vatterott. Released under the MIT License.
