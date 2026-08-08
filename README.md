@@ -23,7 +23,7 @@ A modern, high-performance personal site built with HTML5, custom CSS (PostHog-i
 
 - **Developer-Native Design System**: PostHog-inspired tactile 3D elements, warm dark slate theme (`#12141c`), electric orange (`#f54e00`) & cyan accents.
 - **Technical Capabilities Grid**: Filterable skills matrix categorized by SDKs & Languages (React, Node, Python, Rust, Go), Solutions & APIs (PropelAuth, OAuth/OIDC, MCP AI Tools), and Enterprise Platforms.
-- **Git Commit Timeline**: Git-log styled career timeline highlighting experience across PropelAuth, BetterCloud, ClickUp, and University of Utah.
+- **Career Experience Timeline**: Clean, modern career timeline highlighting experience across PropelAuth, BetterCloud, ClickUp, and University of Utah.
 - **In-Browser Resume Viewer**: Interactive modal displaying resume pages and direct PDF downloads.
 - **Click-to-Copy Contact Utilities**: Instant copy-to-clipboard functionality with toast notifications for email and phone.
 - **Fully Responsive**: Mobile-first responsive layout with custom drawer navigation.

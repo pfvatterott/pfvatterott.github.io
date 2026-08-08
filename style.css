@@ -668,7 +668,7 @@ img {
   gap: 2rem;
 }
 
-.git-timeline-card {
+.timeline-card {
   background: var(--bg-card);
   border: var(--border-main);
   border-radius: var(--radius-md);
@@ -677,13 +677,13 @@ img {
   transition: all var(--transition-fast);
 }
 
-.git-timeline-card:hover {
+.timeline-card:hover {
   border-color: var(--secondary);
   transform: translate(-2px, -2px);
   box-shadow: 6px 6px 0px var(--secondary);
 }
 
-.git-timeline-header {
+.timeline-card-header {
   background: var(--bg-dark-alt);
   padding: 0.75rem 1.5rem;
   border-bottom: var(--border-main);
@@ -694,12 +694,12 @@ img {
   font-size: 0.85rem;
 }
 
-.git-commit-hash {
-  color: var(--primary);
+.timeline-role-badge {
+  color: var(--text-main);
   font-weight: 700;
 }
 
-.git-tag {
+.timeline-date-tag {
   padding: 0.2rem 0.6rem;
   background: #ffffff;
   border: var(--border-main);
@@ -709,7 +709,7 @@ img {
   font-weight: 700;
 }
 
-.git-timeline-body {
+.timeline-card-body {
   padding: 1.75rem;
 }
 
